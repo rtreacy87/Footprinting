@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Apr 28 07:26:59 2026 as: /usr/lib/nmap/nmap -&#45;privileged -sV -sC -p3306 -&#45;script mysql-info,mysql-empty-password,mysql-enum,mysql-users,mysql-variables -oA output/mysql/10.129.42.195/raw/nmap_mysql 10.129.42.195 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -sV -sC -p3306 -&#45;script mysql-info,mysql-empty-password,mysql-enum,mysql-users,mysql-variables -oA output/mysql/10.129.42.195/raw/nmap_mysql 10.129.42.195" start="1777382819" startstr="Tue Apr 28 07:26:59 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3306"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.42.195" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1777382819" endtime="1777382836"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.129.42.195" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="mysql" product="MySQL" version="8.0.27-0ubuntu0.20.04.1" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:8.0.27-0ubuntu0.20.04.1</cpe></service><script id="mysql-enum" output="&#xa;  Accounts: No valid accounts found&#xa;  Statistics: Performed 6 guesses in 5 seconds, average tps: 1.2"><elem key="Accounts">No valid accounts found</elem>
+<elem key="Statistics">Performed 6 guesses in 5 seconds, average tps: 1.2</elem>
+</script><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 8.0.27-0ubuntu0.20.04.1&#xa;  Thread ID: 72&#xa;  Capabilities flags: 65535&#xa;  Some Capabilities: SupportsCompression, Support41Auth, ConnectWithDatabase, Speaks41ProtocolOld, IgnoreSpaceBeforeParenthesis, LongPassword, DontAllowDatabaseTableColumn, LongColumnFlag, SupportsTransactions, FoundRows, IgnoreSigpipes, SupportsLoadDataLocal, InteractiveClient, SwitchToSSLAfterHandshake, Speaks41ProtocolNew, ODBCClient, SupportsMultipleStatments, SupportsAuthPlugins, SupportsMultipleResults&#xa;  Status: Autocommit&#xa;  Salt: P\x0E?x2Q&lt;&#xd;SOG?\x1C&quot;,\x05,\x18\x0B&#xd;&#xa;  Auth Plugin Name: caching_sha2_password"><elem key="Protocol">10</elem>
+<elem key="Version">8.0.27-0ubuntu0.20.04.1</elem>
+<elem key="Thread ID">72</elem>
+<elem key="Capabilities flags">65535</elem>
+<table key="Some Capabilities">
+<elem>SupportsCompression</elem>
+<elem>Support41Auth</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>LongPassword</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>LongColumnFlag</elem>
+<elem>SupportsTransactions</elem>
+<elem>FoundRows</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>InteractiveClient</elem>
+<elem>SwitchToSSLAfterHandshake</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>ODBCClient</elem>
+<elem>SupportsMultipleStatments</elem>
+<elem>SupportsAuthPlugins</elem>
+<elem>SupportsMultipleResults</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">P\x0E?x2Q&lt;&#xd;SOG?\x1C&quot;,\x05,\x18\x0B&#xd;</elem>
+<elem key="Auth Plugin Name">caching_sha2_password</elem>
+</script></port>
+</ports>
+<times srtt="67117" rttvar="50623" to="269609"/>
+</host>
+<runstats><finished time="1777382836" timestr="Tue Apr 28 07:27:16 2026" summary="Nmap done at Tue Apr 28 07:27:16 2026; 1 IP address (1 host up) scanned in 17.60 seconds" elapsed="17.60" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

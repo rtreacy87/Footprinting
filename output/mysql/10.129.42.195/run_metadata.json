@@ -1,0 +1,10 @@
+{
+  "target": "10.129.42.195",
+  "port": 3306,
+  "started_at": "2026-04-28T13:26:58.916712+00:00",
+  "mode": "discover",
+  "package_version": "0.1.0",
+  "safe_mode": true,
+  "username": null,
+  "password_supplied": false
+}

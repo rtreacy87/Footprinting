@@ -1,0 +1,32 @@
+[
+  {
+    "SCHEMA_NAME": "customers",
+    "DEFAULT_CHARACTER_SET_NAME": "utf8mb4",
+    "DEFAULT_COLLATION_NAME": "utf8mb4_0900_ai_ci",
+    "db_type": "application"
+  },
+  {
+    "SCHEMA_NAME": "information_schema",
+    "DEFAULT_CHARACTER_SET_NAME": "utf8",
+    "DEFAULT_COLLATION_NAME": "utf8_general_ci",
+    "db_type": "application"
+  },
+  {
+    "SCHEMA_NAME": "mysql",
+    "DEFAULT_CHARACTER_SET_NAME": "utf8mb4",
+    "DEFAULT_COLLATION_NAME": "utf8mb4_0900_ai_ci",
+    "db_type": "application"
+  },
+  {
+    "SCHEMA_NAME": "performance_schema",
+    "DEFAULT_CHARACTER_SET_NAME": "utf8mb4",
+    "DEFAULT_COLLATION_NAME": "utf8mb4_0900_ai_ci",
+    "db_type": "application"
+  },
+  {
+    "SCHEMA_NAME": "sys",
+    "DEFAULT_CHARACTER_SET_NAME": "utf8mb4",
+    "DEFAULT_COLLATION_NAME": "utf8mb4_0900_ai_ci",
+    "db_type": "application"
+  }
+]

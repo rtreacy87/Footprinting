@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Tue Apr 28 07:26:59 2026 as: /usr/lib/nmap/nmap --privileged -sV -sC -p3306 --script mysql-info,mysql-empty-password,mysql-enum,mysql-users,mysql-variables -oA output/mysql/10.129.42.195/raw/nmap_mysql 10.129.42.195
+Host: 10.129.42.195 ()	Status: Up
+Host: 10.129.42.195 ()	Ports: 3306/open/tcp//mysql//MySQL 8.0.27-0ubuntu0.20.04.1/
+# Nmap done at Tue Apr 28 07:27:16 2026 -- 1 IP address (1 host up) scanned in 17.60 seconds

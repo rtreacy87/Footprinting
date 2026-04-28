@@ -1,0 +1,26 @@
+{
+  "visible": true,
+  "rows": [
+    {
+      "user": "mysql.infoschema",
+      "host": "localhost",
+      "account_locked": "N",
+      "password_expired": "N",
+      "plugin": "caching_sha2_password"
+    },
+    {
+      "user": "robin",
+      "host": "%",
+      "account_locked": "N",
+      "password_expired": "N",
+      "plugin": "caching_sha2_password"
+    },
+    {
+      "user": "robin",
+      "host": "localhost",
+      "account_locked": "N",
+      "password_expired": "N",
+      "plugin": "caching_sha2_password"
+    }
+  ]
+}

@@ -1,0 +1,3182 @@
+[
+  {
+    "TABLE_SCHEMA": "customers",
+    "TABLE_NAME": "myTable",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "id",
+    "CARDINALITY": 99,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "columns_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Host",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "columns_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Db",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "columns_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "User",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "columns_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "Table_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "columns_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 5,
+    "COLUMN_NAME": "Column_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "component",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "component_id",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "db",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Host",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "db",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Db",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "db",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "User",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "db",
+    "INDEX_NAME": "User",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "User",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "default_roles",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "default_roles",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "default_roles",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "DEFAULT_ROLE_HOST",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "default_roles",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "DEFAULT_ROLE_USER",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "engine_cost",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "cost_name",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "engine_cost",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "engine_name",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "engine_cost",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "device_type",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "func",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "global_grants",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": 6,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "global_grants",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": 7,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "global_grants",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "PRIV",
+    "CARDINALITY": 160,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "gtid_executed",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "source_uuid",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "gtid_executed",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "interval_start",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "help_category",
+    "INDEX_NAME": "name",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "name",
+    "CARDINALITY": 53,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "help_category",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "help_category_id",
+    "CARDINALITY": 53,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "help_keyword",
+    "INDEX_NAME": "name",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "name",
+    "CARDINALITY": 908,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "help_keyword",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "help_keyword_id",
+    "CARDINALITY": 1083,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "help_relation",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "help_keyword_id",
+    "CARDINALITY": 1680,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "help_relation",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "help_topic_id",
+    "CARDINALITY": 2873,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "help_topic",
+    "INDEX_NAME": "name",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "name",
+    "CARDINALITY": 683,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "help_topic",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "help_topic_id",
+    "CARDINALITY": 732,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "innodb_index_stats",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "database_name",
+    "CARDINALITY": 3,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "innodb_index_stats",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "table_name",
+    "CARDINALITY": 3,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "innodb_index_stats",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "index_name",
+    "CARDINALITY": 3,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "innodb_index_stats",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "stat_name",
+    "CARDINALITY": 9,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "innodb_table_stats",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "database_name",
+    "CARDINALITY": 3,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "innodb_table_stats",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "table_name",
+    "CARDINALITY": 3,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "password_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Host",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "password_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "User",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "password_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "Password_timestamp",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "plugin",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "name",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "procs_priv",
+    "INDEX_NAME": "Grantor",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Grantor",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "procs_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Host",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "procs_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Db",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "procs_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "User",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "procs_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "Routine_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "procs_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 5,
+    "COLUMN_NAME": "Routine_type",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "proxies_priv",
+    "INDEX_NAME": "Grantor",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Grantor",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "proxies_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Host",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "proxies_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "User",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "proxies_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "Proxied_host",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "proxies_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "Proxied_user",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_asynchronous_connection_failover",
+    "INDEX_NAME": "Channel_name",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Channel_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_asynchronous_connection_failover",
+    "INDEX_NAME": "Channel_name",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Managed_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_asynchronous_connection_failover",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Channel_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_asynchronous_connection_failover",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Host",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_asynchronous_connection_failover",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "Port",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_asynchronous_connection_failover",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "Network_namespace",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_asynchronous_connection_failover",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 5,
+    "COLUMN_NAME": "Managed_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_asynchronous_connection_failover_managed",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Channel_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_asynchronous_connection_failover_managed",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Managed_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_group_configuration_version",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "name",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_group_member_actions",
+    "INDEX_NAME": "event",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "event",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_group_member_actions",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "name",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "replication_group_member_actions",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "event",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "role_edges",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "FROM_HOST",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "role_edges",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "FROM_USER",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "role_edges",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "TO_HOST",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "role_edges",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "TO_USER",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "server_cost",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "cost_name",
+    "CARDINALITY": 6,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "servers",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Server_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "slave_master_info",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Channel_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "slave_relay_log_info",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Channel_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "slave_worker_info",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Channel_name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "slave_worker_info",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Id",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "tables_priv",
+    "INDEX_NAME": "Grantor",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Grantor",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "tables_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Host",
+    "CARDINALITY": 1,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "tables_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Db",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "tables_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "User",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "tables_priv",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "Table_name",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "time_zone",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Time_zone_id",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "time_zone_leap_second",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Transition_time",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "time_zone_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Name",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "time_zone_transition",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Time_zone_id",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "time_zone_transition",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Transition_time",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "time_zone_transition_type",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Time_zone_id",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "time_zone_transition_type",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "Transition_type_id",
+    "CARDINALITY": 0,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "user",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "Host",
+    "CARDINALITY": 2,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "mysql",
+    "TABLE_NAME": "user",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "User",
+    "CARDINALITY": 3,
+    "INDEX_TYPE": "BTREE"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "accounts",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "accounts",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "cond_instances",
+    "INDEX_NAME": "NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "cond_instances",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "BLOCKING_ENGINE_LOCK_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "BLOCKING_ENGINE_LOCK_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "BLOCKING_ENGINE_LOCK_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ENGINE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "BLOCKING_ENGINE_TRANSACTION_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "BLOCKING_ENGINE_TRANSACTION_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "BLOCKING_ENGINE_TRANSACTION_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ENGINE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "BLOCKING_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "BLOCKING_THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "BLOCKING_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "BLOCKING_EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "REQUESTING_ENGINE_LOCK_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "REQUESTING_ENGINE_LOCK_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "REQUESTING_ENGINE_LOCK_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ENGINE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "REQUESTING_ENGINE_TRANSACTION_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "REQUESTING_ENGINE_TRANSACTION_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "REQUESTING_ENGINE_TRANSACTION_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ENGINE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "REQUESTING_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "REQUESTING_THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_lock_waits",
+    "INDEX_NAME": "REQUESTING_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "REQUESTING_EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "ENGINE_TRANSACTION_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "ENGINE_TRANSACTION_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "ENGINE_TRANSACTION_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ENGINE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "OBJECT_SCHEMA",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "OBJECT_SCHEMA",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "OBJECT_SCHEMA",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "PARTITION_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "OBJECT_SCHEMA",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "SUBPARTITION_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "ENGINE_LOCK_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ENGINE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "data_locks",
+    "INDEX_NAME": "THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "error_log",
+    "INDEX_NAME": "ERROR_CODE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "ERROR_CODE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "error_log",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "LOGGED",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "error_log",
+    "INDEX_NAME": "PRIO",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "PRIO",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "error_log",
+    "INDEX_NAME": "SUBSYSTEM",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "SUBSYSTEM",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "error_log",
+    "INDEX_NAME": "THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_by_account_by_error",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_by_account_by_error",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_by_account_by_error",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "ERROR_NUMBER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_by_host_by_error",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_by_host_by_error",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ERROR_NUMBER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_by_thread_by_error",
+    "INDEX_NAME": "THREAD_ID",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_by_thread_by_error",
+    "INDEX_NAME": "THREAD_ID",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ERROR_NUMBER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_by_user_by_error",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_by_user_by_error",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ERROR_NUMBER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_errors_summary_global_by_error",
+    "INDEX_NAME": "ERROR_NUMBER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "ERROR_NUMBER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_current",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_current",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_stages_summary_global_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_current",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_current",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_histogram_by_digest",
+    "INDEX_NAME": "SCHEMA_NAME",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "SCHEMA_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_histogram_by_digest",
+    "INDEX_NAME": "SCHEMA_NAME",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "DIGEST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_histogram_by_digest",
+    "INDEX_NAME": "SCHEMA_NAME",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "BUCKET_NUMBER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_histogram_global",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "BUCKET_NUMBER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_digest",
+    "INDEX_NAME": "SCHEMA_NAME",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "SCHEMA_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_digest",
+    "INDEX_NAME": "SCHEMA_NAME",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "DIGEST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_program",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_TYPE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_program",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_program",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_statements_summary_global_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_current",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_current",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_transactions_summary_global_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_current",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_current",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_history",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_instance",
+    "INDEX_NAME": "EVENT_NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_instance",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "events_waits_summary_global_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "file_instances",
+    "INDEX_NAME": "EVENT_NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "file_instances",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "FILE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "file_summary_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "file_summary_by_instance",
+    "INDEX_NAME": "EVENT_NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "file_summary_by_instance",
+    "INDEX_NAME": "FILE_NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "FILE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "file_summary_by_instance",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "global_status",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "global_variables",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "host_cache",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "host_cache",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "IP",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "hosts",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_by_account_by_event_name",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_by_host_by_event_name",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_by_thread_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_by_user_by_event_name",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "memory_summary_global_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "metadata_locks",
+    "INDEX_NAME": "OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_TYPE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "metadata_locks",
+    "INDEX_NAME": "OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "metadata_locks",
+    "INDEX_NAME": "OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "metadata_locks",
+    "INDEX_NAME": "OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "COLUMN_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "metadata_locks",
+    "INDEX_NAME": "OWNER_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OWNER_THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "metadata_locks",
+    "INDEX_NAME": "OWNER_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OWNER_EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "metadata_locks",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "mutex_instances",
+    "INDEX_NAME": "LOCKED_BY_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "LOCKED_BY_THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "mutex_instances",
+    "INDEX_NAME": "NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "mutex_instances",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "objects_summary_global_by_type",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_TYPE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "objects_summary_global_by_type",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "objects_summary_global_by_type",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "persisted_variables",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "prepared_statements_instances",
+    "INDEX_NAME": "OWNER_OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OWNER_OBJECT_TYPE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "prepared_statements_instances",
+    "INDEX_NAME": "OWNER_OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OWNER_OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "prepared_statements_instances",
+    "INDEX_NAME": "OWNER_OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "OWNER_OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "prepared_statements_instances",
+    "INDEX_NAME": "OWNER_THREAD_ID",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OWNER_THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "prepared_statements_instances",
+    "INDEX_NAME": "OWNER_THREAD_ID",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OWNER_EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "prepared_statements_instances",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "prepared_statements_instances",
+    "INDEX_NAME": "STATEMENT_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "STATEMENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "prepared_statements_instances",
+    "INDEX_NAME": "STATEMENT_NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "STATEMENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "processlist",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_applier_configuration",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "CHANNEL_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_applier_status",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "CHANNEL_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_applier_status_by_coordinator",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "CHANNEL_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_applier_status_by_coordinator",
+    "INDEX_NAME": "THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_applier_status_by_worker",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "CHANNEL_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_applier_status_by_worker",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "WORKER_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_applier_status_by_worker",
+    "INDEX_NAME": "THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_connection_configuration",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "CHANNEL_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_connection_status",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "CHANNEL_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "replication_connection_status",
+    "INDEX_NAME": "THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "rwlock_instances",
+    "INDEX_NAME": "NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "rwlock_instances",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "rwlock_instances",
+    "INDEX_NAME": "WRITE_LOCKED_BY_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "WRITE_LOCKED_BY_THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "session_account_connect_attrs",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "PROCESSLIST_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "session_account_connect_attrs",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ATTR_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "session_connect_attrs",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "PROCESSLIST_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "session_connect_attrs",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "ATTR_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "session_status",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "session_variables",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "setup_actors",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "setup_actors",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "setup_actors",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "ROLE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "setup_consumers",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "setup_instruments",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "setup_objects",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_TYPE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "setup_objects",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "setup_objects",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "setup_threads",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "socket_instances",
+    "INDEX_NAME": "IP",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "IP",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "socket_instances",
+    "INDEX_NAME": "IP",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "PORT",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "socket_instances",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "socket_instances",
+    "INDEX_NAME": "SOCKET_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "SOCKET_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "socket_instances",
+    "INDEX_NAME": "THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "socket_summary_by_event_name",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "socket_summary_by_instance",
+    "INDEX_NAME": "EVENT_NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "EVENT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "socket_summary_by_instance",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "status_by_account",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "status_by_account",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "status_by_account",
+    "INDEX_NAME": "ACCOUNT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "status_by_host",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "status_by_host",
+    "INDEX_NAME": "HOST",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "status_by_thread",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "status_by_thread",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "status_by_user",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "status_by_user",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_handles",
+    "INDEX_NAME": "OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_TYPE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_handles",
+    "INDEX_NAME": "OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_handles",
+    "INDEX_NAME": "OBJECT_TYPE",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_handles",
+    "INDEX_NAME": "OWNER_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OWNER_THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_handles",
+    "INDEX_NAME": "OWNER_THREAD_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OWNER_EVENT_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_handles",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_INSTANCE_BEGIN",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_io_waits_summary_by_index_usage",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_TYPE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_io_waits_summary_by_index_usage",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_io_waits_summary_by_index_usage",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_io_waits_summary_by_index_usage",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 4,
+    "COLUMN_NAME": "INDEX_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_io_waits_summary_by_table",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_TYPE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_io_waits_summary_by_table",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_io_waits_summary_by_table",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_lock_waits_summary_by_table",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "OBJECT_TYPE",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_lock_waits_summary_by_table",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "OBJECT_SCHEMA",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "table_lock_waits_summary_by_table",
+    "INDEX_NAME": "OBJECT",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 3,
+    "COLUMN_NAME": "OBJECT_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "threads",
+    "INDEX_NAME": "NAME",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "threads",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "threads",
+    "INDEX_NAME": "PROCESSLIST_ACCOUNT",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "PROCESSLIST_USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "threads",
+    "INDEX_NAME": "PROCESSLIST_ACCOUNT",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "PROCESSLIST_HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "threads",
+    "INDEX_NAME": "PROCESSLIST_HOST",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "PROCESSLIST_HOST",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "threads",
+    "INDEX_NAME": "PROCESSLIST_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "PROCESSLIST_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "threads",
+    "INDEX_NAME": "RESOURCE_GROUP",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "RESOURCE_GROUP",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "threads",
+    "INDEX_NAME": "THREAD_OS_ID",
+    "NON_UNIQUE": 1,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_OS_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "user_defined_functions",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "UDF_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "user_variables_by_thread",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "user_variables_by_thread",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "users",
+    "INDEX_NAME": "USER",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "USER",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "variables_by_thread",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "THREAD_ID",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "performance_schema",
+    "TABLE_NAME": "variables_by_thread",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 2,
+    "COLUMN_NAME": "VARIABLE_NAME",
+    "CARDINALITY": null,
+    "INDEX_TYPE": "HASH"
+  },
+  {
+    "TABLE_SCHEMA": "sys",
+    "TABLE_NAME": "sys_config",
+    "INDEX_NAME": "PRIMARY",
+    "NON_UNIQUE": 0,
+    "SEQ_IN_INDEX": 1,
+    "COLUMN_NAME": "variable",
+    "CARDINALITY": 6,
+    "INDEX_TYPE": "BTREE"
+  }
+]

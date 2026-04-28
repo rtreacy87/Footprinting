@@ -1,0 +1,71 @@
+{
+  "security_variables": [
+    {
+      "Variable_name": "general_log",
+      "Value": "OFF"
+    },
+    {
+      "Variable_name": "general_log_file",
+      "Value": "/var/lib/mysql/NIX02.log"
+    },
+    {
+      "Variable_name": "have_ssl",
+      "Value": "YES"
+    },
+    {
+      "Variable_name": "local_infile",
+      "Value": "OFF"
+    },
+    {
+      "Variable_name": "log_error",
+      "Value": "/var/log/mysql/error.log"
+    },
+    {
+      "Variable_name": "plugin_dir",
+      "Value": "/usr/lib/mysql/plugin/"
+    },
+    {
+      "Variable_name": "require_secure_transport",
+      "Value": "OFF"
+    },
+    {
+      "Variable_name": "secure_file_priv",
+      "Value": "/var/lib/mysql-files/"
+    },
+    {
+      "Variable_name": "skip_name_resolve",
+      "Value": "OFF"
+    },
+    {
+      "Variable_name": "slow_query_log",
+      "Value": "OFF"
+    },
+    {
+      "Variable_name": "slow_query_log_file",
+      "Value": "/var/lib/mysql/NIX02-slow.log"
+    },
+    {
+      "Variable_name": "sql_warnings",
+      "Value": "OFF"
+    },
+    {
+      "Variable_name": "ssl_ca",
+      "Value": "ca.pem"
+    },
+    {
+      "Variable_name": "ssl_cert",
+      "Value": "server-cert.pem"
+    },
+    {
+      "Variable_name": "ssl_key",
+      "Value": "server-key.pem"
+    }
+  ],
+  "status_summary": {
+    "Aborted_connects": "42",
+    "Connections": "56",
+    "Ssl_cipher": "",
+    "Threads_connected": "1",
+    "Uptime": "938"
+  }
+}

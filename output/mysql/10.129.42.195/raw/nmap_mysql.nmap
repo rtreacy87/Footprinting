@@ -1,0 +1,21 @@
+# Nmap 7.99 scan initiated Tue Apr 28 07:26:59 2026 as: /usr/lib/nmap/nmap --privileged -sV -sC -p3306 --script mysql-info,mysql-empty-password,mysql-enum,mysql-users,mysql-variables -oA output/mysql/10.129.42.195/raw/nmap_mysql 10.129.42.195
+Nmap scan report for 10.129.42.195
+Host is up (0.067s latency).
+
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 8.0.27-0ubuntu0.20.04.1
+| mysql-enum: 
+|   Accounts: No valid accounts found
+|_  Statistics: Performed 6 guesses in 5 seconds, average tps: 1.2
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.27-0ubuntu0.20.04.1
+|   Thread ID: 72
+|   Capabilities flags: 65535
+|   Some Capabilities: SupportsCompression, Support41Auth, ConnectWithDatabase, Speaks41ProtocolOld, IgnoreSpaceBeforeParenthesis, LongPassword, DontAllowDatabaseTableColumn, LongColumnFlag, SupportsTransactions, FoundRows, IgnoreSigpipes, SupportsLoadDataLocal, InteractiveClient, SwitchToSSLAfterHandshake, Speaks41ProtocolNew, ODBCClient, SupportsMultipleStatments, SupportsAuthPlugins, SupportsMultipleResults
+|   Status: Autocommit
+|   Salt: P\x0E?x2Q<\x0DSOG?\x1C",\x05,\x18\x0B\x0D
+|_  Auth Plugin Name: caching_sha2_password
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr 28 07:27:16 2026 -- 1 IP address (1 host up) scanned in 17.60 seconds
