@@ -1,0 +1,52 @@
+10.129.42.195:81ms:.0:Linux NIX02 5.4.0-90-generic #101-Ubuntu SMP Fri Oct 15 20:00:55 UTC 2021 x86_64
+10.129.42.195:82ms:.0:.10
+10.129.42.195:81ms:.0:98927
+10.129.42.195:81ms:.0:devadmin <devadmin@inlanefreight.htb>
+10.129.42.195:82ms:.0:NIX02
+10.129.42.195:81ms:.0:InFreight SNMP v0.91
+10.129.42.195:81ms:.0:72
+10.129.42.195:82ms:.0:7
+10.129.42.195:81ms:.1:.1
+10.129.42.195:81ms:.2:.1
+10.129.42.195:82ms:.3:.1
+10.129.42.195:81ms:.4:.1
+10.129.42.195:81ms:.5:.1
+10.129.42.195:82ms:.6:.49
+10.129.42.195:81ms:.7:.4
+10.129.42.195:81ms:.8:.50
+10.129.42.195:82ms:.9:.3
+10.129.42.195:81ms:.10:.92
+10.129.42.195:81ms:.1:The SNMP Management Architecture MIB.
+10.129.42.195:82ms:.2:The MIB for Message Processing and Dispatching.
+10.129.42.195:81ms:.3:The management information definitions for the SNMP User-based Security Model.
+10.129.42.195:81ms:.4:The MIB module for SNMPv2 entities
+10.129.42.195:82ms:.5:View-based Access Control Model for SNMP.
+10.129.42.195:81ms:.6:The MIB module for managing TCP implementations
+10.129.42.195:81ms:.7:The MIB module for managing IP and ICMP implementations
+10.129.42.195:82ms:.8:The MIB module for managing UDP implementations
+10.129.42.195:81ms:.9:The MIB modules for managing SNMP Notification, plus filtering.
+10.129.42.195:81ms:.10:The MIB module for logging SNMP Notifications.
+10.129.42.195:81ms:.1:6
+10.129.42.195:81ms:.2:6
+10.129.42.195:81ms:.3:6
+10.129.42.195:81ms:.4:7
+10.129.42.195:81ms:.5:7
+10.129.42.195:82ms:.6:7
+10.129.42.195:81ms:.7:7
+10.129.42.195:81ms:.8:7
+10.129.42.195:82ms:.9:7
+10.129.42.195:81ms:.10:7
+10.129.42.195:81ms:.0:2
+10.129.42.195:82ms:.1:1
+10.129.42.195:81ms:.2:2
+10.129.42.195:81ms:.1:lo
+10.129.42.195:81ms:.2:VMware VMXNET3 Ethernet Controller
+10.129.42.195:81ms:.1:24
+10.129.42.195:81ms:.2:6
+10.129.42.195:82ms:.1:65536
+10.129.42.195:82ms:.2:1500
+10.129.42.195:81ms:.1:10000000
+10.129.42.195:81ms:.2:-1
+10.129.42.195: Message cannot be decoded!
+10.129.42.195: Message cannot be decoded!
+10.129.42.195: Message cannot be decoded!

@@ -1,0 +1,9 @@
+# snmp-agent requirements
+# This package uses the Python standard library only.
+# No third-party packages are required for the core MVP.
+
+# --- Optional / future dependencies (not installed by default) ---
+#
+# rich>=13.0          # Terminal output with colour, tables, and progress bars
+# pydantic>=2.0       # Runtime data validation and typed settings models
+# jinja2>=3.1         # Template-based report rendering (alternative to render_markdown.py)

@@ -1,0 +1,30 @@
+{
+  "asset": {
+    "ip": "10.129.42.195",
+    "label": "10.129.42.195",
+    "hostname": ""
+  },
+  "system_identity": {},
+  "network_interfaces": [],
+  "ip_networking": [],
+  "tcp": [],
+  "udp": [],
+  "processes": [],
+  "installed_software": [],
+  "storage": [],
+  "users_contacts": [
+    "devadmin@inlanefreight.htb"
+  ],
+  "suspicious_strings": [],
+  "potential_attack_paths": [
+    {
+      "type": "username_reuse",
+      "title": "Username / Credential Reuse",
+      "evidence": [
+        "Emails found: devadmin@inlanefreight.htb",
+        "Usernames found: devadmin"
+      ],
+      "recommendation": "Use extracted usernames for password spraying and service enumeration."
+    }
+  ]
+}

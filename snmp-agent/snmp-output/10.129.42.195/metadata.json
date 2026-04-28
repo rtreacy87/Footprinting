@@ -1,0 +1,17 @@
+{
+  "target_ip": "10.129.42.195",
+  "label": "10.129.42.195",
+  "collected_at": "2026-04-28T03:41:21.853897+00:00",
+  "snmp_version": "2c",
+  "community": "public",
+  "communities": [
+    "public"
+  ],
+  "tools_used": [
+    "nmap",
+    "snmpwalk",
+    "braa"
+  ],
+  "full_walk": false,
+  "snmp_enum_version": "0.1.0"
+}
