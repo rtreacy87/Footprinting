@@ -1,0 +1,64 @@
+hashcat (v7.1.2) starting
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Initializing bridges. Please be patient...Initialized bridgesInitializing backend runtimes. Please be patient...Initialized backend runtimesInitializing backend devices. Please be patient...Initialized backend devicesOpenCL API (OpenCL 3.0 PoCL 6.0+debian  Linux, None+Asserts, RELOC, SPIR-V, LLVM 18.1.8, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+====================================================================================================================================================
+* Device #01: cpu-skylake-avx512-Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz, 63228/126456 MB (16384 MB allocatable), 20MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 31
+Minimum salt length supported by kernel: 0
+Maximum salt length supported by kernel: 51
+
+Counting lines in output/ipmi/10.129.202.5/hashes/ipmi_clean_hash.txt. Please be patient...Counted lines in output/ipmi/10.129.202.5/hashes/ipmi_clean_hash.txtParsing Hashes: 1/4 (25.00%)...Parsed Hashes: 4/4 (100.00%)Sorting hashes. Please be patient...Sorted hashesRemoving duplicate hashes. Please be patient...Removed duplicate hashesSorting salts. Please be patient...Sorted saltsComparing hashes with potfile entries. Please be patient...Compared hashes with potfile entriesGenerating bitmap tables...Generated bitmap tablesHashes: 4 digests; 4 unique digests, 4 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Optimized-Kernel
+* Zero-Byte
+* Not-Iterated
+
+Watchdog: Temperature abort trigger set to 90c
+
+INFO: Removed 3 hashes found as potfile entries.
+
+Initializing bridge salts. Please be patient...Initialized bridge saltsInitializing device kernels and memory. Please be patient...Initializing backend runtime for device #1. Please be patient...Initialized backend runtime for device #1Host memory allocated for this attack: 517 MB (122561 MB free)
+
+Initialized device kernels and memoryStarting self-test. Please be patient...Finished self-testDictionary cache hit:
+* Filename..: /tmp/rockyou.txt
+* Passwords.: 14344385
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+
+Starting autotune. Please be patient...Finished autotune
+                                                          
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => 
+                                                          
+eec099cc820c00005139dc6957c8df95213bd38923f84046867e91d697651930390e9834d3d10edca123456789abcdefa123456789abcdef140561646d696e:425bb4a259c89378538af1ad3ef34f75bfbabc45:trinity
+
+                                                          
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 7300 (IPMI2 RAKP HMAC-SHA1)
+Hash.Target......: output/ipmi/10.129.202.5/hashes/ipmi_clean_hash.txt
+Time.Started.....: Fri May  1 20:43:47 2026, (0 secs)
+Time.Estimated...: Fri May  1 20:43:47 2026, (0 secs)
+Kernel.Feature...: Optimized Kernel (password length 0-31 bytes)
+Guess.Base.......: File (/tmp/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#01........:  5770.3 kH/s (2.56ms) @ Accel:1024 Loops:1 Thr:1 Vec:16
+Recovered........: 4/4 (100.00%) Digests (total), 1/4 (25.00%) Digests (new), 4/4 (100.00%) Salts
+Progress.........: 81920/57377540 (0.14%)
+Rejected.........: 0/81920 (0.00%)
+Restore.Point....: 0/14344385 (0.00%)
+Restore.Sub.#01..: Salt:3 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#01...: 123456 -> michelle4
+Hardware.Mon.#01.: Temp: 68c Util: 34%
+
+Started: Fri May  1 20:43:46 2026
+Stopped: Fri May  1 20:43:49 2026

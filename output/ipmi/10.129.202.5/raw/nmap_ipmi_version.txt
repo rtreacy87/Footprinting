@@ -1,0 +1,14 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-05-01 20:43 -0600
+Nmap scan report for 10.129.202.5
+Host is up (0.068s latency).
+
+PORT    STATE SERVICE
+623/udp open  asf-rmcp
+| ipmi-version: 
+|   Version: 
+|     IPMI-2.0
+|   UserAuth: password, md5, md2, null
+|   PassAuth: auth_msg, auth_user, non_null_user
+|_  Level: 1.5, 2.0
+
+Nmap done: 1 IP address (1 host up) scanned in 0.88 seconds
