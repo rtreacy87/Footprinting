@@ -1,0 +1,9 @@
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	sambashare      Disk      InFreight SMB v3.1
+	IPC$            IPC       IPC Service (InlaneFreight SMB server (Samba, Ubuntu))
+Reconnecting with SMB1 for workgroup listing.
+Protocol negotiation to server 10.129.202.5 (for a protocol between LANMAN1 and NT1) failed: NT_STATUS_INVALID_NETWORK_RESPONSE
+Unable to connect with SMB1 -- no workgroup available

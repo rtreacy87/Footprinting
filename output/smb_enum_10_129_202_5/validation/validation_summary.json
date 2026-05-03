@@ -1,0 +1,77 @@
+{
+  "control_assessments": [
+    {
+      "control_id": "CTRL-SMB-AUTH-001",
+      "name": "Anonymous SMB access disabled",
+      "status": "failed",
+      "evidence_ids": [
+        "EVID-949294B4"
+      ],
+      "confidence": "high",
+      "reason": "Anonymous share listing succeeded \u2014 anonymous access is enabled."
+    },
+    {
+      "control_id": "CTRL-SMB-SHARE-001",
+      "name": "No anonymous readable shares",
+      "status": "failed",
+      "evidence_ids": [
+        "EVID-ED703FC2"
+      ],
+      "confidence": "high",
+      "reason": "Anonymous read access to: sambashare"
+    },
+    {
+      "control_id": "CTRL-SMB-SHARE-002",
+      "name": "No anonymous writable shares",
+      "status": "passed",
+      "evidence_ids": [
+        "EVID-50EF47AB"
+      ],
+      "confidence": "high",
+      "reason": "No shares were anonymously writable."
+    },
+    {
+      "control_id": "CTRL-SMB-PROTO-001",
+      "name": "SMB signing enforced",
+      "status": "failed",
+      "evidence_ids": [
+        "EVID-A5FF4773"
+      ],
+      "confidence": "high",
+      "reason": "SMB signing is not required \u2014 relay attacks may be viable."
+    },
+    {
+      "control_id": "CTRL-SMB-PROTO-002",
+      "name": "SMBv1 disabled",
+      "status": "passed",
+      "evidence_ids": [
+        "EVID-3B1E26F6"
+      ],
+      "confidence": "high",
+      "reason": "SMBv1 is disabled."
+    },
+    {
+      "control_id": "CTRL-SMB-DATA-001",
+      "name": "No exposed credential files",
+      "status": "passed",
+      "evidence_ids": [],
+      "confidence": "medium",
+      "reason": "No credential files found in accessible shares."
+    },
+    {
+      "control_id": "CTRL-SMB-DATA-002",
+      "name": "No exposed backup files",
+      "status": "passed",
+      "evidence_ids": [],
+      "confidence": "medium",
+      "reason": "No backup files found in accessible shares."
+    }
+  ],
+  "tests_run": 13,
+  "skipped_steps": [
+    {
+      "step": "Attack Path Generation",
+      "reason": "Skipped for profile standard"
+    }
+  ]
+}

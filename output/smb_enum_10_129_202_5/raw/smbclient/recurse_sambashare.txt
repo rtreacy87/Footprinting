@@ -1,0 +1,13 @@
+  .                                   D        0  Mon Nov  8 06:43:14 2021
+  ..                                  D        0  Mon Nov  8 08:53:19 2021
+  .profile                            H      807  Tue Feb 25 05:03:22 2020
+  contents                            D        0  Mon Nov  8 06:43:45 2021
+  .bash_logout                        H      220  Tue Feb 25 05:03:22 2020
+  .bashrc                             H     3771  Tue Feb 25 05:03:22 2020
+
+\contents
+  .                                   D        0  Mon Nov  8 06:43:45 2021
+  ..                                  D        0  Mon Nov  8 06:43:14 2021
+  flag.txt                            N       38  Mon Nov  8 06:43:45 2021
+
+		5090944 blocks of size 1024. 1765916 blocks available

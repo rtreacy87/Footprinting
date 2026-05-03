@@ -1,0 +1,10 @@
+{
+  "smb_versions": [
+    "SMB 2.1",
+    "SMB 3.0"
+  ],
+  "signing_enabled": true,
+  "signing_required": false,
+  "smb1_enabled": false,
+  "dialect": "3.1.1"
+}

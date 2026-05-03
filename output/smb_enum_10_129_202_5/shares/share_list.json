@@ -1,0 +1,29 @@
+[
+  {
+    "name": "print$",
+    "comment": "Printer Drivers",
+    "share_type": "Disk",
+    "readable": false,
+    "writable": false,
+    "anonymous_access": null,
+    "file_count": 0
+  },
+  {
+    "name": "sambashare",
+    "comment": "InFreight SMB v3.1",
+    "share_type": "Disk",
+    "readable": true,
+    "writable": false,
+    "anonymous_access": true,
+    "file_count": 5
+  },
+  {
+    "name": "IPC$",
+    "comment": "IPC Service (InlaneFreight SMB server (Samba, Ubuntu))",
+    "share_type": "IPC",
+    "readable": false,
+    "writable": false,
+    "anonymous_access": null,
+    "file_count": 0
+  }
+]

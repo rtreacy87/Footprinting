@@ -1,0 +1,191 @@
+[
+  {
+    "test_id": "PROTO-001",
+    "name": "SMB Version Detection",
+    "category": "protocol",
+    "tool": "nmap",
+    "command": "nmap -sV -p 139,445 --open -Pn 10.129.202.5",
+    "status": "passed_vulnerable",
+    "evidence_ids": [
+      "EVID-BFA8F5FF"
+    ],
+    "confidence": "high",
+    "notes": "Version banner: Samba smbd 4",
+    "expected_secure_result": "SMBv1 not present",
+    "actual_result": "Samba smbd 4"
+  },
+  {
+    "test_id": "PROTO-002",
+    "name": "SMB Signing Status",
+    "category": "protocol",
+    "tool": "nmap",
+    "command": "nmap -p 139,445 --script smb-security-mode,smb2-security-mode,smb-os-discovery,smb-protocols -Pn 10.129.202.5",
+    "status": "passed_vulnerable",
+    "evidence_ids": [
+      "EVID-A5FF4773"
+    ],
+    "confidence": "high",
+    "notes": "SMB signing is not required \u2014 relay attacks may be possible.",
+    "expected_secure_result": "SMB signing required",
+    "actual_result": "signing not required"
+  },
+  {
+    "test_id": "AUTH-001",
+    "name": "Anonymous SMB Share Listing",
+    "category": "authentication",
+    "tool": "smbclient",
+    "command": "smbclient -N -L //10.129.202.5",
+    "status": "passed_vulnerable",
+    "evidence_ids": [
+      "EVID-949294B4"
+    ],
+    "confidence": "high",
+    "notes": "Anonymous share listing succeeded.",
+    "expected_secure_result": "NT_STATUS_ACCESS_DENIED",
+    "actual_result": "Share list returned"
+  },
+  {
+    "test_id": "AUTH-002",
+    "name": "Anonymous IPC$ Access (Null Session)",
+    "category": "authentication",
+    "tool": "rpcclient",
+    "command": "rpcclient -U  -N 10.129.202.5 -c srvinfo",
+    "status": "passed_vulnerable",
+    "evidence_ids": [
+      "EVID-F1EB6C28"
+    ],
+    "confidence": "high",
+    "notes": "Null session to IPC$ succeeded \u2014 anonymous RPC access allowed.",
+    "expected_secure_result": "NT_STATUS_ACCESS_DENIED",
+    "actual_result": "Null session succeeded"
+  },
+  {
+    "test_id": "AUTH-003",
+    "name": "Credential Validation",
+    "category": "authentication",
+    "tool": "smbclient",
+    "command": "",
+    "status": "inconclusive",
+    "evidence_ids": [],
+    "confidence": "unknown",
+    "notes": "No credentials provided \u2014 skipping AUTH-003",
+    "expected_secure_result": "Authentication fails with supplied credentials",
+    "actual_result": null
+  },
+  {
+    "test_id": "SHARE-001",
+    "name": "Enumerate Visible Shares",
+    "category": "shares",
+    "tool": "smbclient",
+    "command": "smbclient -N -L //10.129.202.5",
+    "status": "passed_vulnerable",
+    "evidence_ids": [
+      "EVID-1E96BDD5"
+    ],
+    "confidence": "high",
+    "notes": "Found 3 shares: print$, sambashare, IPC$",
+    "expected_secure_result": "Only expected shares visible",
+    "actual_result": "3 shares visible"
+  },
+  {
+    "test_id": "SHARE-002",
+    "name": "Determine Readable Shares",
+    "category": "shares",
+    "tool": "smbmap",
+    "command": "smbmap -H 10.129.202.5 -u  -p ",
+    "status": "passed_vulnerable",
+    "evidence_ids": [
+      "EVID-ED703FC2"
+    ],
+    "confidence": "high",
+    "notes": "Anonymous read access to: sambashare",
+    "expected_secure_result": "No shares readable anonymously",
+    "actual_result": "Readable: sambashare"
+  },
+  {
+    "test_id": "SHARE-003",
+    "name": "Determine Writable Shares",
+    "category": "shares",
+    "tool": "smbmap",
+    "command": "smbmap -H 10.129.202.5 -u  -p ",
+    "status": "failed_secure",
+    "evidence_ids": [
+      "EVID-50EF47AB"
+    ],
+    "confidence": "high",
+    "notes": "No shares writable anonymously.",
+    "expected_secure_result": "No shares writable anonymously",
+    "actual_result": "No writable shares"
+  },
+  {
+    "test_id": "PROTO-003",
+    "name": "SMBv1 Enabled Check",
+    "category": "protocol",
+    "tool": "nmap",
+    "command": "nmap -p 445 --script smb-protocols -Pn 10.129.202.5",
+    "status": "failed_secure",
+    "evidence_ids": [
+      "EVID-3B1E26F6"
+    ],
+    "confidence": "high",
+    "notes": "SMBv1 is disabled.",
+    "expected_secure_result": "SMBv1 disabled",
+    "actual_result": "SMBv1 disabled"
+  },
+  {
+    "test_id": "PROTO-004",
+    "name": "SMB Relay Risk Check",
+    "category": "protocol",
+    "tool": "nmap",
+    "command": "derived from PROTO-002",
+    "status": "passed_vulnerable",
+    "evidence_ids": [
+      "EVID-A5FF4773"
+    ],
+    "confidence": "high",
+    "notes": "SMB signing is not required. Relay attacks (NTLM relay, SMBRelay) may be viable if an authentication source exists.",
+    "expected_secure_result": "SMB signing required \u2014 relay not viable",
+    "actual_result": "Relay risk: HIGH"
+  },
+  {
+    "test_id": "PERM-001",
+    "name": "Anonymous Write Check",
+    "category": "permissions",
+    "tool": "smbmap",
+    "command": "smbmap -H 10.129.202.5 -u  -p ",
+    "status": "failed_secure",
+    "evidence_ids": [
+      "EVID-6736458B"
+    ],
+    "confidence": "high",
+    "notes": "No anonymous write access detected.",
+    "expected_secure_result": "No anonymous write access",
+    "actual_result": "No writable shares"
+  },
+  {
+    "test_id": "PERM-002",
+    "name": "Authenticated Write Check",
+    "category": "permissions",
+    "tool": "smbmap",
+    "command": "",
+    "status": "inconclusive",
+    "evidence_ids": [],
+    "confidence": "unknown",
+    "notes": "No credentials provided \u2014 skipping PERM-002",
+    "expected_secure_result": "No unexpected write access with credentials",
+    "actual_result": null
+  },
+  {
+    "test_id": "PERM-003",
+    "name": "World-Readable Sensitive File Check",
+    "category": "permissions",
+    "tool": "smbclient",
+    "command": "",
+    "status": "inconclusive",
+    "evidence_ids": [],
+    "confidence": "unknown",
+    "notes": "No file findings available \u2014 run file classification phase first",
+    "expected_secure_result": "No sensitive files world-readable",
+    "actual_result": null
+  }
+]
