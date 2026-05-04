@@ -1,0 +1,26 @@
+{
+  "tests_performed": [
+    "nmap",
+    "rpcinfo",
+    "showmount",
+    "mount_v4",
+    "mount_v3",
+    "mount_v2",
+    "mount_v4",
+    "mount_v3",
+    "mount_v2"
+  ],
+  "tests_successful": [
+    "nmap",
+    "showmount"
+  ],
+  "tests_failed": [
+    "rpcinfo",
+    "mount_v4",
+    "mount_v3",
+    "mount_v2",
+    "mount_v4",
+    "mount_v3",
+    "mount_v2"
+  ]
+}

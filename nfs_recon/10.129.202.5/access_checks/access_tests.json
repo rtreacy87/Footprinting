@@ -1,0 +1,16 @@
+[
+  {
+    "export_path": "/var/nfs",
+    "export_visible": true,
+    "rpc_accessible": true,
+    "version_compatible": true,
+    "notes": ""
+  },
+  {
+    "export_path": "/mnt/nfsshare",
+    "export_visible": true,
+    "rpc_accessible": true,
+    "version_compatible": true,
+    "notes": ""
+  }
+]

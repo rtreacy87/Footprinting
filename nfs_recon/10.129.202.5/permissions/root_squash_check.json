@@ -1,0 +1,16 @@
+{
+  "exports": [
+    {
+      "path": "/var/nfs",
+      "writable": false,
+      "root_squash": true,
+      "risk": "low"
+    },
+    {
+      "path": "/mnt/nfsshare",
+      "writable": false,
+      "root_squash": true,
+      "risk": "low"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+/var/nfs: risk=low
+/mnt/nfsshare: risk=low

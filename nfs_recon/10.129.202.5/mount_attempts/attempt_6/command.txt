@@ -1,0 +1,1 @@
+mount -t nfs -o vers=2,nolock 10.129.202.5:/mnt/nfsshare /tmp/nfs_mount_fpa071i_

@@ -1,0 +1,6 @@
+{
+  "target": "10.129.202.5",
+  "port_111_open": true,
+  "port_2049_open": true,
+  "nfs_detected": true
+}

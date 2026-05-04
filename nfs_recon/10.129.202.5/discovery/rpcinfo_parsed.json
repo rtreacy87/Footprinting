@@ -1,0 +1,163 @@
+[
+  {
+    "program": "100000",
+    "version": "4",
+    "protocol": "tcp",
+    "port": 111,
+    "service_name": "portmapper"
+  },
+  {
+    "program": "100000",
+    "version": "3",
+    "protocol": "tcp",
+    "port": 111,
+    "service_name": "portmapper"
+  },
+  {
+    "program": "100000",
+    "version": "2",
+    "protocol": "tcp",
+    "port": 111,
+    "service_name": "portmapper"
+  },
+  {
+    "program": "100000",
+    "version": "4",
+    "protocol": "udp",
+    "port": 111,
+    "service_name": "portmapper"
+  },
+  {
+    "program": "100000",
+    "version": "3",
+    "protocol": "udp",
+    "port": 111,
+    "service_name": "portmapper"
+  },
+  {
+    "program": "100000",
+    "version": "2",
+    "protocol": "udp",
+    "port": 111,
+    "service_name": "portmapper"
+  },
+  {
+    "program": "100005",
+    "version": "1",
+    "protocol": "udp",
+    "port": 33372,
+    "service_name": "mountd"
+  },
+  {
+    "program": "100005",
+    "version": "1",
+    "protocol": "tcp",
+    "port": 44819,
+    "service_name": "mountd"
+  },
+  {
+    "program": "100005",
+    "version": "2",
+    "protocol": "udp",
+    "port": 55654,
+    "service_name": "mountd"
+  },
+  {
+    "program": "100005",
+    "version": "2",
+    "protocol": "tcp",
+    "port": 40733,
+    "service_name": "mountd"
+  },
+  {
+    "program": "100005",
+    "version": "3",
+    "protocol": "udp",
+    "port": 52610,
+    "service_name": "mountd"
+  },
+  {
+    "program": "100005",
+    "version": "3",
+    "protocol": "tcp",
+    "port": 33425,
+    "service_name": "mountd"
+  },
+  {
+    "program": "100003",
+    "version": "3",
+    "protocol": "tcp",
+    "port": 2049,
+    "service_name": "nfs"
+  },
+  {
+    "program": "100003",
+    "version": "4",
+    "protocol": "tcp",
+    "port": 2049,
+    "service_name": "nfs"
+  },
+  {
+    "program": "100227",
+    "version": "3",
+    "protocol": "tcp",
+    "port": 2049,
+    "service_name": "nfs_acl"
+  },
+  {
+    "program": "100003",
+    "version": "3",
+    "protocol": "udp",
+    "port": 2049,
+    "service_name": "nfs"
+  },
+  {
+    "program": "100227",
+    "version": "3",
+    "protocol": "udp",
+    "port": 2049,
+    "service_name": "nfs_acl"
+  },
+  {
+    "program": "100021",
+    "version": "1",
+    "protocol": "udp",
+    "port": 55406,
+    "service_name": "nlockmgr"
+  },
+  {
+    "program": "100021",
+    "version": "3",
+    "protocol": "udp",
+    "port": 55406,
+    "service_name": "nlockmgr"
+  },
+  {
+    "program": "100021",
+    "version": "4",
+    "protocol": "udp",
+    "port": 55406,
+    "service_name": "nlockmgr"
+  },
+  {
+    "program": "100021",
+    "version": "1",
+    "protocol": "tcp",
+    "port": 41807,
+    "service_name": "nlockmgr"
+  },
+  {
+    "program": "100021",
+    "version": "3",
+    "protocol": "tcp",
+    "port": 41807,
+    "service_name": "nlockmgr"
+  },
+  {
+    "program": "100021",
+    "version": "4",
+    "protocol": "tcp",
+    "port": 41807,
+    "service_name": "nlockmgr"
+  }
+]

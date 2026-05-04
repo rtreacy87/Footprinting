@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "error": "mount.nfs: failed to apply fstab options",
+  "version": "v2"
+}

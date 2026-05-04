@@ -1,0 +1,1 @@
+mount -t nfs -o vers=3,nolock 10.129.202.5:/var/nfs /tmp/nfs_mount_rj6spy0v
