@@ -1,0 +1,50 @@
+[
+  {
+    "action": "Exploit open relay for phishing or spam",
+    "rationale": "Server accepts external\u2192external relay. Attacker can send mail as any address.",
+    "priority": "high",
+    "prerequisites": [
+      "open relay confirmed"
+    ],
+    "tool_hint": "swaks --to victim@target.com --from spoof@trusted.com --server <target>",
+    "source": "attack_path_analyzer"
+  },
+  {
+    "action": "Exploit open relay for phishing or spam",
+    "rationale": "Server accepts external\u2192external relay. Attacker can send mail as any address.",
+    "priority": "high",
+    "prerequisites": [
+      "open relay confirmed"
+    ],
+    "tool_hint": "swaks --to victim@target.com --from spoof@trusted.com --server <target>",
+    "source": "attack_path_analyzer"
+  },
+  {
+    "action": "Send phishing email with spoofed internal sender",
+    "rationale": "Server accepts forged MAIL FROM without SPF/DMARC enforcement.",
+    "priority": "high",
+    "prerequisites": [
+      "spoofing accepted on MAIL FROM"
+    ],
+    "tool_hint": "swaks --from admin@target.com --to victim@target.com --server <target>",
+    "source": "attack_path_analyzer"
+  },
+  {
+    "action": "Send phishing email with spoofed internal sender",
+    "rationale": "Server accepts forged MAIL FROM without SPF/DMARC enforcement.",
+    "priority": "high",
+    "prerequisites": [
+      "spoofing accepted on MAIL FROM"
+    ],
+    "tool_hint": "swaks --from admin@target.com --to victim@target.com --server <target>",
+    "source": "attack_path_analyzer"
+  },
+  {
+    "action": "Retry failed checks with increased timeout",
+    "rationale": "1 check(s) failed \u2014 may be timeout or connectivity.",
+    "priority": "low",
+    "prerequisites": [],
+    "tool_hint": "Re-run with --timeout 60",
+    "source": "failure_analysis"
+  }
+]

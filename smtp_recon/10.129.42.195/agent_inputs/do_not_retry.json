@@ -1,0 +1,7 @@
+[
+  {
+    "check_name": "expn_user_enum",
+    "reason": "Command blocked: Server has disabled the EXPN command.",
+    "evidence": "Response code: 502"
+  }
+]

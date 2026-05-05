@@ -1,0 +1,21 @@
+Starting smtp-user-enum v1.2 ( http://pentestmonkey.net/tools/smtp-user-enum )
+
+ ----------------------------------------------------------
+|                   Scan Information                       |
+ ----------------------------------------------------------
+
+Mode ..................... VRFY
+Worker Processes ......... 60
+Usernames file ........... /tmp/tmpve46sre6.txt
+Target count ............. 1
+Username count ........... 103
+Target TCP port .......... 25
+Query timeout ............ 30 secs
+Target domain ............ 
+
+######## Scan started at Mon May  4 19:32:14 2026 #########
+10.129.42.195: robin exists
+######## Scan completed at Mon May  4 19:32:34 2026 #########
+1 results.
+
+103 queries in 20 seconds (5.2 queries / sec)

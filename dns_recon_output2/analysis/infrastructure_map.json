@@ -1,0 +1,9 @@
+{
+  "name_servers": [
+    "ns.inlanefreight.htb",
+    "ns.inlanefreight.htb",
+    "ns.inlanefreight.htb"
+  ],
+  "mail_servers": [],
+  "subdomains": []
+}

@@ -1,0 +1,10 @@
+{
+  "domain": "inlanefreight.htb",
+  "dns_server": "10.129.1.83",
+  "total_records": 21,
+  "zone_transfer_succeeded": true,
+  "subdomains_found": 0,
+  "findings_count": 2,
+  "pivots_count": 2,
+  "output_root": "dns_recon_output"
+}

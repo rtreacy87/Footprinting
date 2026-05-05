@@ -1,0 +1,74 @@
+[
+  {
+    "hostname": "internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "10.129.1.6",
+    "notes": ""
+  },
+  {
+    "hostname": "dc1.internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "10.129.34.16",
+    "notes": ""
+  },
+  {
+    "hostname": "dc2.internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "10.129.34.11",
+    "notes": ""
+  },
+  {
+    "hostname": "mail1.internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "10.129.18.200",
+    "notes": ""
+  },
+  {
+    "hostname": "ns.internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "127.0.0.1",
+    "notes": ""
+  },
+  {
+    "hostname": "vpn.internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "10.129.1.6",
+    "notes": ""
+  },
+  {
+    "hostname": "ws1.internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "10.129.1.34",
+    "notes": ""
+  },
+  {
+    "hostname": "ws2.internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "10.129.1.35",
+    "notes": ""
+  },
+  {
+    "hostname": "wsus.internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "10.129.18.2",
+    "notes": ""
+  }
+]

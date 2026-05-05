@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Zone Transfer Allowed",
+    "severity": "high",
+    "description": "DNS zone transfer (AXFR) succeeded against 10.129.1.83.",
+    "evidence": [
+      "AXFR inlanefreight.htb @10.129.1.83"
+    ],
+    "recommendation": "Restrict AXFR to trusted slave servers only."
+  },
+  {
+    "title": "Dev/Staging Subdomain Exposed",
+    "severity": "contextual",
+    "description": "dev.inlanefreight.htb (10.12.0.1) appears to be a dev/staging host.",
+    "evidence": [
+      "A dev.inlanefreight.htb -> 10.12.0.1"
+    ],
+    "recommendation": "Verify this host is intentionally public."
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "category": "zone_transfer",
+    "name": "AXFR inlanefreight.htb @10.129.1.83",
+    "target": "10.129.1.83",
+    "status": "success",
+    "detail": "11 records",
+    "records_found": [
+      {
+        "fqdn": "inlanefreight.htb",
+        "record_type": "SOA",
+        "value": "inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "inlanefreight.htb",
+        "record_type": "TXT",
+        "value": "MS=ms97310371",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "inlanefreight.htb",
+        "record_type": "TXT",
+        "value": "atlassian-domain-verification=t1rKCy68JFszSdCKVpw64A1QksWdXuYFUeSXKU",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "inlanefreight.htb",
+        "record_type": "TXT",
+        "value": "v=spf1 include:mailgun.org include:_spf.google.com include:spf.protection.outlook.com include:_spf.atlassian.net ip4:10.129.124.8 ip4:10.129.127.2 ip4:10.129.42.106 ~all",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "inlanefreight.htb",
+        "record_type": "NS",
+        "value": "ns.inlanefreight.htb",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "app.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.18.15",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "dev.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.12.0.1",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "internal.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.1.6",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "mail1.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.18.201",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "ns.inlanefreight.htb",
+        "record_type": "A",
+        "value": "127.0.0.1",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      },
+      {
+        "fqdn": "inlanefreight.htb",
+        "record_type": "SOA",
+        "value": "inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800",
+        "source": "axfr",
+        "zone": "inlanefreight.htb"
+      }
+    ]
+  },
+  {
+    "category": "zone_transfer",
+    "name": "AXFR app.inlanefreight.htb @10.129.1.83",
+    "target": "10.129.1.83",
+    "status": "refused",
+    "detail": "; Transfer failed.\n",
+    "records_found": []
+  },
+  {
+    "category": "zone_transfer",
+    "name": "AXFR dev.inlanefreight.htb @10.129.1.83",
+    "target": "10.129.1.83",
+    "status": "refused",
+    "detail": "; Transfer failed.\n",
+    "records_found": []
+  },
+  {
+    "category": "zone_transfer",
+    "name": "AXFR internal.inlanefreight.htb @10.129.1.83",
+    "target": "10.129.1.83",
+    "status": "success",
+    "detail": "15 records",
+    "records_found": [
+      {
+        "fqdn": "internal.inlanefreight.htb",
+        "record_type": "SOA",
+        "value": "inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "internal.inlanefreight.htb",
+        "record_type": "TXT",
+        "value": "MS=ms97310371",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "internal.inlanefreight.htb",
+        "record_type": "TXT",
+        "value": "HTB{DN5_z0N3_7r4N5F3r_iskdufhcnlu34}",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "internal.inlanefreight.htb",
+        "record_type": "TXT",
+        "value": "atlassian-domain-verification=t1rKCy68JFszSdCKVpw64A1QksWdXuYFUeSXKU",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "internal.inlanefreight.htb",
+        "record_type": "TXT",
+        "value": "v=spf1 include:mailgun.org include:_spf.google.com include:spf.protection.outlook.com include:_spf.atlassian.net ip4:10.129.124.8 ip4:10.129.127.2 ip4:10.129.42.106 ~all",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "internal.inlanefreight.htb",
+        "record_type": "NS",
+        "value": "ns.inlanefreight.htb",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "dc1.internal.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.34.16",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "dc2.internal.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.34.11",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "mail1.internal.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.18.200",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "ns.internal.inlanefreight.htb",
+        "record_type": "A",
+        "value": "127.0.0.1",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "vpn.internal.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.1.6",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "ws1.internal.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.1.34",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "ws2.internal.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.1.35",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "wsus.internal.inlanefreight.htb",
+        "record_type": "A",
+        "value": "10.129.18.2",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      },
+      {
+        "fqdn": "internal.inlanefreight.htb",
+        "record_type": "SOA",
+        "value": "inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800",
+        "source": "axfr",
+        "zone": "internal.inlanefreight.htb"
+      }
+    ]
+  },
+  {
+    "category": "zone_transfer",
+    "name": "AXFR mail1.inlanefreight.htb @10.129.1.83",
+    "target": "10.129.1.83",
+    "status": "refused",
+    "detail": "; Transfer failed.\n",
+    "records_found": []
+  }
+]

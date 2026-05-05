@@ -1,0 +1,12 @@
+[
+  {
+    "port": 25,
+    "starttls_advertised": true,
+    "starttls_negotiated": true,
+    "tls_version": "TLSv1.3",
+    "cipher_suite": "TLS_AES_256_GCM_SHA384",
+    "certificate_cn": "",
+    "errors": [],
+    "status": "supported"
+  }
+]

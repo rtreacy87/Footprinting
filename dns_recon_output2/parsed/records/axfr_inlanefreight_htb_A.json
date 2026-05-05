@@ -1,0 +1,37 @@
+[
+  {
+    "fqdn": "app.inlanefreight.htb",
+    "record_type": "A",
+    "value": "10.129.18.15",
+    "source": "axfr",
+    "zone": "inlanefreight.htb"
+  },
+  {
+    "fqdn": "dev.inlanefreight.htb",
+    "record_type": "A",
+    "value": "10.12.0.1",
+    "source": "axfr",
+    "zone": "inlanefreight.htb"
+  },
+  {
+    "fqdn": "internal.inlanefreight.htb",
+    "record_type": "A",
+    "value": "10.129.1.6",
+    "source": "axfr",
+    "zone": "inlanefreight.htb"
+  },
+  {
+    "fqdn": "mail1.inlanefreight.htb",
+    "record_type": "A",
+    "value": "10.129.18.201",
+    "source": "axfr",
+    "zone": "inlanefreight.htb"
+  },
+  {
+    "fqdn": "ns.inlanefreight.htb",
+    "record_type": "A",
+    "value": "127.0.0.1",
+    "source": "axfr",
+    "zone": "inlanefreight.htb"
+  }
+]

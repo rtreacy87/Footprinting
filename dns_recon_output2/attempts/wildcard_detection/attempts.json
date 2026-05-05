@@ -1,0 +1,10 @@
+[
+  {
+    "category": "wildcard_detection",
+    "name": "wildcard_check inlanefreight.htb",
+    "target": "inlanefreight.htb",
+    "status": "success",
+    "detail": "Wildcard detected: 3/3 random names resolved",
+    "records_found": []
+  }
+]

@@ -1,0 +1,13 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-05-04 19:30 -0600
+Nmap scan report for 10.129.42.195
+Host is up (0.070s latency).
+Not shown: 3 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+25/tcp open  smtp
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port25-TCP:V=7.99%I=7%D=5/4%Time=69F9485D%P=x86_64-pc-linux-gnu%r(Hello
+SF:,36,"220\x20InFreight\x20ESMTP\x20v2\.11\r\n501\x20Syntax:\x20EHLO\x20h
+SF:ostname\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32.17 seconds

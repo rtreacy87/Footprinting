@@ -1,0 +1,16 @@
+[
+  {
+    "fqdn": "inlanefreight.htb",
+    "record_type": "NS",
+    "value": "ns.inlanefreight.htb",
+    "source": "dig",
+    "zone": null
+  },
+  {
+    "fqdn": "ns.inlanefreight.htb",
+    "record_type": "A",
+    "value": "127.0.0.1",
+    "source": "dig",
+    "zone": null
+  }
+]

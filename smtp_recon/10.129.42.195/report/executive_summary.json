@@ -1,0 +1,20 @@
+{
+  "target": "10.129.42.195",
+  "domain": "",
+  "open_ports": [
+    25
+  ],
+  "overall_risk": "critical",
+  "total_findings": 8,
+  "critical_findings": 2,
+  "high_findings": 1,
+  "key_issues": [
+    "OPEN RELAY detected on port 25",
+    "Open relay confirmed",
+    "Spoofed MAIL FROM accepted on port 25"
+  ],
+  "checks_run": 10,
+  "checks_passed": 8,
+  "checks_failed": 1,
+  "checks_skipped": 0
+}

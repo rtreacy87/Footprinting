@@ -1,0 +1,30 @@
+[
+  {
+    "fqdn": "internal.inlanefreight.htb",
+    "record_type": "TXT",
+    "value": "MS=ms97310371",
+    "source": "axfr",
+    "zone": "internal.inlanefreight.htb"
+  },
+  {
+    "fqdn": "internal.inlanefreight.htb",
+    "record_type": "TXT",
+    "value": "HTB{DN5_z0N3_7r4N5F3r_iskdufhcnlu34}",
+    "source": "axfr",
+    "zone": "internal.inlanefreight.htb"
+  },
+  {
+    "fqdn": "internal.inlanefreight.htb",
+    "record_type": "TXT",
+    "value": "atlassian-domain-verification=t1rKCy68JFszSdCKVpw64A1QksWdXuYFUeSXKU",
+    "source": "axfr",
+    "zone": "internal.inlanefreight.htb"
+  },
+  {
+    "fqdn": "internal.inlanefreight.htb",
+    "record_type": "TXT",
+    "value": "v=spf1 include:mailgun.org include:_spf.google.com include:spf.protection.outlook.com include:_spf.atlassian.net ip4:10.129.124.8 ip4:10.129.127.2 ip4:10.129.42.106 ~all",
+    "source": "axfr",
+    "zone": "internal.inlanefreight.htb"
+  }
+]

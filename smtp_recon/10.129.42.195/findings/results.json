@@ -1,0 +1,361 @@
+{
+  "target": "10.129.42.195",
+  "domain": "",
+  "scanned_at": "2026-05-05T01:25:08.690609+00:00",
+  "open_ports": [
+    25
+  ],
+  "safe_mode": true,
+  "results": [
+    {
+      "name": "port_detection",
+      "target": "10.129.42.195",
+      "port": 0,
+      "status": "success",
+      "summary": "Open SMTP ports: [25]",
+      "raw_evidence_paths": [
+        "smtp_recon/10.129.42.195/raw/nmap/smtp_port_scan.txt"
+      ],
+      "normalized_output_paths": [],
+      "findings": [],
+      "controls_observed": [],
+      "errors": []
+    },
+    {
+      "name": "banner_grab",
+      "target": "10.129.42.195",
+      "port": 0,
+      "status": "success",
+      "summary": "Captured banners from ports: [25]",
+      "raw_evidence_paths": [
+        "smtp_recon/10.129.42.195/raw/manual_sessions/banner_25.txt"
+      ],
+      "normalized_output_paths": [
+        "smtp_recon/10.129.42.195/normalized/banners.txt"
+      ],
+      "findings": [
+        {
+          "title": "SMTP Banner on port 25",
+          "severity": "info",
+          "category": "information_disclosure",
+          "description": "SMTP service identified on port 25",
+          "evidence": "220 InFreight ESMTP v2.11",
+          "remediation": "",
+          "tags": [],
+          "port": 25
+        }
+      ],
+      "controls_observed": [],
+      "errors": []
+    },
+    {
+      "name": "ehlo_capabilities",
+      "target": "10.129.42.195",
+      "port": 0,
+      "status": "success",
+      "summary": "EHLO capabilities collected from ports: [25]",
+      "raw_evidence_paths": [
+        "smtp_recon/10.129.42.195/raw/manual_sessions/ehlo_session_25.txt"
+      ],
+      "normalized_output_paths": [
+        "smtp_recon/10.129.42.195/normalized/ehlo_capabilities.json"
+      ],
+      "findings": [],
+      "controls_observed": [],
+      "errors": []
+    },
+    {
+      "name": "starttls",
+      "target": "10.129.42.195",
+      "port": 0,
+      "status": "success",
+      "summary": "STARTTLS supported on ports: [25]",
+      "raw_evidence_paths": [
+        "smtp_recon/10.129.42.195/raw/manual_sessions/starttls_session_25.txt"
+      ],
+      "normalized_output_paths": [
+        "smtp_recon/10.129.42.195/normalized/tls_results.json"
+      ],
+      "findings": [],
+      "controls_observed": [
+        {
+          "port": 25,
+          "starttls_advertised": true,
+          "starttls_negotiated": true,
+          "tls_version": "TLSv1.3",
+          "cipher_suite": "TLS_AES_256_GCM_SHA384",
+          "certificate_cn": "",
+          "errors": [],
+          "status": "supported"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "auth_methods",
+      "target": "10.129.42.195",
+      "port": 0,
+      "status": "inconclusive",
+      "summary": "AUTH methods found: []",
+      "raw_evidence_paths": [
+        "smtp_recon/10.129.42.195/raw/manual_sessions/auth_check_plain_25.txt",
+        "smtp_recon/10.129.42.195/raw/manual_sessions/auth_check_tls_25.txt"
+      ],
+      "normalized_output_paths": [
+        "smtp_recon/10.129.42.195/normalized/auth_methods.json"
+      ],
+      "findings": [],
+      "controls_observed": [],
+      "errors": []
+    },
+    {
+      "name": "vrfy_user_enum",
+      "target": "10.129.42.195",
+      "port": 25,
+      "status": "success",
+      "summary": "VRFY: 0 confirmed users out of 101 tested on port 25",
+      "raw_evidence_paths": [
+        "smtp_recon/10.129.42.195/raw/manual_sessions/vrfy_session.txt"
+      ],
+      "normalized_output_paths": [
+        "smtp_recon/10.129.42.195/identity_enumeration/vrfy_users.json"
+      ],
+      "findings": [],
+      "controls_observed": [],
+      "errors": []
+    },
+    {
+      "name": "expn_user_enum",
+      "target": "10.129.42.195",
+      "port": 25,
+      "status": "success",
+      "summary": "EXPN: 0 confirmed out of 101 tested on port 25",
+      "raw_evidence_paths": [
+        "smtp_recon/10.129.42.195/raw/manual_sessions/expn_session.txt"
+      ],
+      "normalized_output_paths": [
+        "smtp_recon/10.129.42.195/identity_enumeration/expn_users.json"
+      ],
+      "findings": [
+        {
+          "title": "EXPN command blocked",
+          "severity": "info",
+          "category": "security_control",
+          "description": "Server has disabled the EXPN command.",
+          "evidence": "Response code: 502",
+          "remediation": "",
+          "tags": [],
+          "port": 25
+        }
+      ],
+      "controls_observed": [],
+      "errors": []
+    },
+    {
+      "name": "rcpt_to_user_enum",
+      "target": "10.129.42.195",
+      "port": 0,
+      "status": "failed",
+      "summary": "Unhandled exception: cannot access local variable 'port' where it is not associated with a value",
+      "raw_evidence_paths": [],
+      "normalized_output_paths": [],
+      "findings": [],
+      "controls_observed": [],
+      "errors": [
+        "cannot access local variable 'port' where it is not associated with a value"
+      ]
+    },
+    {
+      "name": "open_relay",
+      "target": "10.129.42.195",
+      "port": 0,
+      "status": "success",
+      "summary": "Open relay: DETECTED (4 scenarios tested)",
+      "raw_evidence_paths": [
+        "smtp_recon/10.129.42.195/trust_boundary_tests/open_relay/relay_25_external-_external.txt",
+        "smtp_recon/10.129.42.195/trust_boundary_tests/open_relay/relay_25_internal-_external.txt",
+        "smtp_recon/10.129.42.195/trust_boundary_tests/open_relay/relay_25_external-_internal.txt",
+        "smtp_recon/10.129.42.195/trust_boundary_tests/open_relay/relay_25_internal-_internal.txt"
+      ],
+      "normalized_output_paths": [
+        "smtp_recon/10.129.42.195/normalized/relay_tests.json"
+      ],
+      "findings": [
+        {
+          "title": "OPEN RELAY detected on port 25",
+          "severity": "critical",
+          "category": "open_relay",
+          "description": "Port 25 accepted RCPT TO from an external sender to an external recipient \u2014 this is a fully open relay.",
+          "evidence": "MAIL FROM:<attacker@external-pentest.invalid> => 250\nRCPT TO:<victim@external-pentest.invalid> => 250",
+          "remediation": "Restrict relay to authenticated users or internal networks only. Review mynetworks and relay_domains configuration.",
+          "tags": [
+            "open_relay",
+            "critical"
+          ],
+          "port": 25
+        }
+      ],
+      "controls_observed": [],
+      "errors": []
+    },
+    {
+      "name": "spoofing",
+      "target": "10.129.42.195",
+      "port": 0,
+      "status": "success",
+      "summary": "Spoofing: 2/4 forged MAIL FROM accepted",
+      "raw_evidence_paths": [
+        "smtp_recon/10.129.42.195/trust_boundary_tests/spoofing/spoof_25_admin_at_10_129_42_195.txt",
+        "smtp_recon/10.129.42.195/trust_boundary_tests/spoofing/spoof_25_root_at_10_129_42_195.txt",
+        "smtp_recon/10.129.42.195/trust_boundary_tests/spoofing/spoof_25_postmaster_at_example_com.txt",
+        "smtp_recon/10.129.42.195/trust_boundary_tests/spoofing/spoof_25_no-reply_at_paypal_com.txt"
+      ],
+      "normalized_output_paths": [
+        "smtp_recon/10.129.42.195/normalized/spoofing_tests.json"
+      ],
+      "findings": [
+        {
+          "title": "Spoofed MAIL FROM accepted on port 25",
+          "severity": "medium",
+          "category": "spoofing",
+          "description": "Server accepted MAIL FROM:<postmaster@example.com> without authentication. Forged postmaster at external domain",
+          "evidence": "MAIL FROM:<postmaster@example.com> => 250\nRCPT TO:<test@test.local> => 250",
+          "remediation": "Implement SPF, DKIM, and DMARC. Configure the server to reject spoofed sender addresses.",
+          "tags": [
+            "spoofing",
+            "email_security"
+          ],
+          "port": 25
+        },
+        {
+          "title": "Spoofed MAIL FROM accepted on port 25",
+          "severity": "high",
+          "category": "spoofing",
+          "description": "Server accepted MAIL FROM:<no-reply@paypal.com> without authentication. Forged well-known brand address",
+          "evidence": "MAIL FROM:<no-reply@paypal.com> => 250\nRCPT TO:<test@test.local> => 250",
+          "remediation": "Implement SPF, DKIM, and DMARC. Configure the server to reject spoofed sender addresses.",
+          "tags": [
+            "spoofing",
+            "email_security"
+          ],
+          "port": 25
+        }
+      ],
+      "controls_observed": [],
+      "errors": []
+    }
+  ],
+  "all_findings": [
+    {
+      "title": "SMTP Banner on port 25",
+      "severity": "info",
+      "category": "information_disclosure",
+      "description": "SMTP service identified on port 25",
+      "evidence": "220 InFreight ESMTP v2.11",
+      "remediation": "",
+      "tags": [],
+      "port": 25
+    },
+    {
+      "title": "EXPN command blocked",
+      "severity": "info",
+      "category": "security_control",
+      "description": "Server has disabled the EXPN command.",
+      "evidence": "Response code: 502",
+      "remediation": "",
+      "tags": [],
+      "port": 25
+    },
+    {
+      "title": "OPEN RELAY detected on port 25",
+      "severity": "critical",
+      "category": "open_relay",
+      "description": "Port 25 accepted RCPT TO from an external sender to an external recipient \u2014 this is a fully open relay.",
+      "evidence": "MAIL FROM:<attacker@external-pentest.invalid> => 250\nRCPT TO:<victim@external-pentest.invalid> => 250",
+      "remediation": "Restrict relay to authenticated users or internal networks only. Review mynetworks and relay_domains configuration.",
+      "tags": [
+        "open_relay",
+        "critical"
+      ],
+      "port": 25
+    },
+    {
+      "title": "Spoofed MAIL FROM accepted on port 25",
+      "severity": "medium",
+      "category": "spoofing",
+      "description": "Server accepted MAIL FROM:<postmaster@example.com> without authentication. Forged postmaster at external domain",
+      "evidence": "MAIL FROM:<postmaster@example.com> => 250\nRCPT TO:<test@test.local> => 250",
+      "remediation": "Implement SPF, DKIM, and DMARC. Configure the server to reject spoofed sender addresses.",
+      "tags": [
+        "spoofing",
+        "email_security"
+      ],
+      "port": 25
+    },
+    {
+      "title": "Spoofed MAIL FROM accepted on port 25",
+      "severity": "high",
+      "category": "spoofing",
+      "description": "Server accepted MAIL FROM:<no-reply@paypal.com> without authentication. Forged well-known brand address",
+      "evidence": "MAIL FROM:<no-reply@paypal.com> => 250\nRCPT TO:<test@test.local> => 250",
+      "remediation": "Implement SPF, DKIM, and DMARC. Configure the server to reject spoofed sender addresses.",
+      "tags": [
+        "spoofing",
+        "email_security"
+      ],
+      "port": 25
+    },
+    {
+      "title": "PIPELINING enabled on port 25",
+      "severity": "info",
+      "category": "capability",
+      "description": "PIPELINING allows batched commands; can speed up enumeration.",
+      "evidence": "",
+      "remediation": "",
+      "tags": [],
+      "port": 25
+    },
+    {
+      "title": "VRFY capability advertised on port 25",
+      "severity": "medium",
+      "category": "user_enumeration",
+      "description": "Server explicitly advertises VRFY support.",
+      "evidence": "",
+      "remediation": "",
+      "tags": [],
+      "port": 25
+    },
+    {
+      "title": "Open relay confirmed",
+      "severity": "critical",
+      "category": "open_relay",
+      "description": "Relay: 1/4 accepted. Spoofing: 2/4 MAIL FROM accepted.",
+      "evidence": "",
+      "remediation": "",
+      "tags": [
+        "open_relay",
+        "spam",
+        "phishing"
+      ],
+      "port": 0
+    }
+  ],
+  "controls": [
+    {
+      "name": "EXPN_USER_ENUM_BLOCKED",
+      "control_type": "block",
+      "port": 25,
+      "description": "Server has disabled the EXPN command.",
+      "evidence": "Response code: 502",
+      "bypass_hints": []
+    },
+    {
+      "name": "STARTTLS",
+      "control_type": "tls_required",
+      "port": 25,
+      "description": "STARTTLS available and successfully negotiated.",
+      "evidence": "",
+      "bypass_hints": []
+    }
+  ]
+}

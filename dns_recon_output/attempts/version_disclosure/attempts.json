@@ -1,0 +1,10 @@
+[
+  {
+    "category": "version_disclosure",
+    "name": "version.bind @10.129.1.83",
+    "target": "10.129.1.83",
+    "status": "failure",
+    "detail": ";; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28718\n;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n;; WARNING: recursion requested but not available\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 4096\n; COOKIE: b1c86daa6a8c67650100000069f949a17ba72",
+    "records_found": []
+  }
+]

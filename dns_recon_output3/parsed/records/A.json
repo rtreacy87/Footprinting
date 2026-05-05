@@ -1,0 +1,9 @@
+[
+  {
+    "fqdn": "inlanefreight.htb",
+    "record_type": "SOA",
+    "value": "inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800",
+    "source": "dig",
+    "zone": null
+  }
+]

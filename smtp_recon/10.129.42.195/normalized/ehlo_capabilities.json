@@ -1,0 +1,46 @@
+{
+  "25": [
+    {
+      "keyword": "PIPELINING",
+      "parameters": []
+    },
+    {
+      "keyword": "SIZE",
+      "parameters": [
+        "10240000"
+      ]
+    },
+    {
+      "keyword": "VRFY",
+      "parameters": []
+    },
+    {
+      "keyword": "ETRN",
+      "parameters": []
+    },
+    {
+      "keyword": "STARTTLS",
+      "parameters": []
+    },
+    {
+      "keyword": "ENHANCEDSTATUSCODES",
+      "parameters": []
+    },
+    {
+      "keyword": "8BITMIME",
+      "parameters": []
+    },
+    {
+      "keyword": "DSN",
+      "parameters": []
+    },
+    {
+      "keyword": "SMTPUTF8",
+      "parameters": []
+    },
+    {
+      "keyword": "CHUNKING",
+      "parameters": []
+    }
+  ]
+}

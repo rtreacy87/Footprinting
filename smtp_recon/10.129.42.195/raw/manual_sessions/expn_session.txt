@@ -1,0 +1,207 @@
+# EXPN enumeration against 10.129.42.195:25
+C: EXPN michael
+S: 502 5.5.2 Error: command not recognized
+C: EXPN james
+S: 502 5.5.2 Error: command not recognized
+C: EXPN john
+S: 502 5.5.2 Error: command not recognized
+C: EXPN robert
+S: 502 5.5.2 Error: command not recognized
+C: EXPN david
+S: 502 5.5.2 Error: command not recognized
+C: EXPN william
+S: 502 5.5.2 Error: command not recognized
+C: EXPN mary
+S: 502 5.5.2 Error: command not recognized
+C: EXPN christopher
+S: 502 5.5.2 Error: command not recognized
+C: EXPN joseph
+S: 502 5.5.2 Error: command not recognized
+C: EXPN richard
+S: 502 5.5.2 Error: command not recognized
+C: EXPN daniel
+S: 502 5.5.2 Error: command not recognized
+C: EXPN thomas
+S: 502 5.5.2 Error: command not recognized
+C: EXPN matthew
+S: 502 5.5.2 Error: command not recognized
+C: EXPN jennifer
+S: 502 5.5.2 Error: command not recognized
+C: EXPN charles
+S: 502 5.5.2 Error: command not recognized
+C: EXPN anthony
+S: 502 5.5.2 Error: command not recognized
+C: EXPN patricia
+S: 502 5.5.2 Error: command not recognized
+C: EXPN linda
+S: 502 5.5.2 Error: command not recognized
+C: EXPN mark
+S: 502 5.5.2 Error: command not recognized
+C: EXPN elizabeth
+S: 502 5.5.2 Error: command not recognized
+C: EXPN joshua
+S: 502 5.5.2 Error: command not recognized
+C: EXPN steven
+S: 502 5.5.2 Error: command not recognized
+C: EXPN andrew
+S: 502 5.5.2 Error: command not recognized
+C: EXPN kevin
+S: 502 5.5.2 Error: command not recognized
+C: EXPN brian
+S: 502 5.5.2 Error: command not recognized
+C: EXPN barbara
+S: 502 5.5.2 Error: command not recognized
+C: EXPN jessica
+S: 502 5.5.2 Error: command not recognized
+C: EXPN jason
+S: 502 5.5.2 Error: command not recognized
+C: EXPN susan
+S: 502 5.5.2 Error: command not recognized
+C: EXPN timothy
+S: 502 5.5.2 Error: command not recognized
+C: EXPN paul
+S: 502 5.5.2 Error: command not recognized
+C: EXPN kenneth
+S: 502 5.5.2 Error: command not recognized
+C: EXPN lisa
+S: 502 5.5.2 Error: command not recognized
+C: EXPN ryan
+S: 502 5.5.2 Error: command not recognized
+C: EXPN sarah
+S: 502 5.5.2 Error: command not recognized
+C: EXPN karen
+S: 502 5.5.2 Error: command not recognized
+C: EXPN jeffrey
+S: 502 5.5.2 Error: command not recognized
+C: EXPN donald
+S: 502 5.5.2 Error: command not recognized
+C: EXPN ashley
+S: 502 5.5.2 Error: command not recognized
+C: EXPN eric
+S: 502 5.5.2 Error: command not recognized
+C: EXPN jacob
+S: 502 5.5.2 Error: command not recognized
+C: EXPN nicholas
+S: 502 5.5.2 Error: command not recognized
+C: EXPN jonathan
+S: 502 5.5.2 Error: command not recognized
+C: EXPN ronald
+S: 502 5.5.2 Error: command not recognized
+C: EXPN michelle
+S: 502 5.5.2 Error: command not recognized
+C: EXPN kimberly
+S: 502 5.5.2 Error: command not recognized
+C: EXPN nancy
+S: 502 5.5.2 Error: command not recognized
+C: EXPN justin
+S: 502 5.5.2 Error: command not recognized
+C: EXPN sandra
+S: 502 5.5.2 Error: command not recognized
+C: EXPN amanda
+S: 502 5.5.2 Error: command not recognized
+C: EXPN brandon
+S: 502 5.5.2 Error: command not recognized
+C: EXPN stephanie
+S: 502 5.5.2 Error: command not recognized
+C: EXPN emily
+S: 502 5.5.2 Error: command not recognized
+C: EXPN melissa
+S: 502 5.5.2 Error: command not recognized
+C: EXPN gary
+S: 502 5.5.2 Error: command not recognized
+C: EXPN edward
+S: 502 5.5.2 Error: command not recognized
+C: EXPN stephen
+S: 502 5.5.2 Error: command not recognized
+C: EXPN scott
+S: 502 5.5.2 Error: command not recognized
+C: EXPN george
+S: 502 5.5.2 Error: command not recognized
+C: EXPN donna
+S: 502 5.5.2 Error: command not recognized
+C: EXPN jose
+S: 502 5.5.2 Error: command not recognized
+C: EXPN rebecca
+S: 502 5.5.2 Error: command not recognized
+C: EXPN deborah
+S: 502 5.5.2 Error: command not recognized
+C: EXPN laura
+S: 502 5.5.2 Error: command not recognized
+C: EXPN cynthia
+S: 502 5.5.2 Error: command not recognized
+C: EXPN carol
+S: 502 5.5.2 Error: command not recognized
+C: EXPN amy
+S: 502 5.5.2 Error: command not recognized
+C: EXPN margaret
+S: 502 5.5.2 Error: command not recognized
+C: EXPN gregory
+S: 502 5.5.2 Error: command not recognized
+C: EXPN sharon
+S: 502 5.5.2 Error: command not recognized
+C: EXPN larry
+S: 502 5.5.2 Error: command not recognized
+C: EXPN angela
+S: 502 5.5.2 Error: command not recognized
+C: EXPN maria
+S: 502 5.5.2 Error: command not recognized
+C: EXPN alexander
+S: 502 5.5.2 Error: command not recognized
+C: EXPN benjamin
+S: 502 5.5.2 Error: command not recognized
+C: EXPN nicole
+S: 502 5.5.2 Error: command not recognized
+C: EXPN kathleen
+S: 502 5.5.2 Error: command not recognized
+C: EXPN patrick
+S: 502 5.5.2 Error: command not recognized
+C: EXPN samantha
+S: 502 5.5.2 Error: command not recognized
+C: EXPN tyler
+S: 502 5.5.2 Error: command not recognized
+C: EXPN samuel
+S: 502 5.5.2 Error: command not recognized
+C: EXPN betty
+S: 502 5.5.2 Error: command not recognized
+C: EXPN brenda
+S: 502 5.5.2 Error: command not recognized
+C: EXPN pamela
+S: 502 5.5.2 Error: command not recognized
+C: EXPN aaron
+S: 502 5.5.2 Error: command not recognized
+C: EXPN kelly
+S: 502 5.5.2 Error: command not recognized
+C: EXPN robin
+S: 502 5.5.2 Error: command not recognized
+C: EXPN heather
+S: 502 5.5.2 Error: command not recognized
+C: EXPN rachel
+S: 502 5.5.2 Error: command not recognized
+C: EXPN adam
+S: 502 5.5.2 Error: command not recognized
+C: EXPN christine
+S: 502 5.5.2 Error: command not recognized
+C: EXPN zachary
+S: 502 5.5.2 Error: command not recognized
+C: EXPN debra
+S: 502 5.5.2 Error: command not recognized
+C: EXPN katherine
+S: 502 5.5.2 Error: command not recognized
+C: EXPN dennis
+S: 502 5.5.2 Error: command not recognized
+C: EXPN nathan
+S: 502 5.5.2 Error: command not recognized
+C: EXPN christina
+S: 502 5.5.2 Error: command not recognized
+C: EXPN julie
+S: 502 5.5.2 Error: command not recognized
+C: EXPN jordan
+S: 502 5.5.2 Error: command not recognized
+C: EXPN kyle
+S: 502 5.5.2 Error: command not recognized
+C: EXPN anna
+S: 502 5.5.2 Error: command not recognized
+C: EXPN notarealuser-canary
+S: 502 5.5.2 Error: command not recognized
+C: EXPN zzz-smtp-recon-canary
+S: 502 5.5.2 Error: command not recognized

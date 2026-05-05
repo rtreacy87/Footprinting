@@ -1,0 +1,36 @@
+[
+  {
+    "category": "open_relay",
+    "priority": "critical",
+    "guidance": "Restrict mail relay to authenticated users. Set mynetworks to trusted IP ranges only. Require SASL authentication for relaying.",
+    "related_findings": [
+      "OPEN RELAY detected on port 25",
+      "Open relay confirmed"
+    ]
+  },
+  {
+    "category": "user_enumeration",
+    "priority": "high",
+    "guidance": "Disable VRFY and EXPN commands. Configure identical responses for valid and invalid RCPT TO addresses.",
+    "related_findings": [
+      "VRFY capability advertised on port 25"
+    ]
+  },
+  {
+    "category": "spoofing",
+    "priority": "high",
+    "guidance": "Implement SPF records to restrict authorized senders. Configure DKIM signing. Enforce DMARC policy (p=reject). Configure the server to reject spoofed sender addresses.",
+    "related_findings": [
+      "Spoofed MAIL FROM accepted on port 25",
+      "Spoofed MAIL FROM accepted on port 25"
+    ]
+  },
+  {
+    "category": "information_disclosure",
+    "priority": "low",
+    "guidance": "Suppress server version information from banners. Set smtpd_banner to a generic string.",
+    "related_findings": [
+      "SMTP Banner on port 25"
+    ]
+  }
+]

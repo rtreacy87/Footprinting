@@ -1,0 +1,9 @@
+[
+  {
+    "fqdn": "inlanefreight.htb",
+    "record_type": "NS",
+    "value": "ns.inlanefreight.htb",
+    "source": "axfr",
+    "zone": "inlanefreight.htb"
+  }
+]

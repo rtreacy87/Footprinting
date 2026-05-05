@@ -1,17 +1,69 @@
 #!/usr/bin/env python3
+"""
+HTB Footprinting — DNS lab solver.
+
+Usage:
+    python dns_footprint_solver.py <target_ip> [options]
+
+The target IP rotates when the lab respawns; pass it explicitly each run.
+"""
 
 import argparse
 import re
+import sys
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Set, Tuple
+from typing import Optional
 
 import dns.exception
 import dns.query
 import dns.resolver
-import dns.zone
+
+from dns_recon import DnsOrchestrator, DnsReconConfig
+from dns_recon.models.dns_record import DnsRecord
 
 
-def make_resolver(server: str, timeout: float) -> dns.resolver.Resolver:
+_HTB_FLAG = re.compile(r"HTB\{[^}]+\}")
+
+
+def _find_flag(records: list[DnsRecord]) -> Optional[str]:
+    for r in records:
+        if r.record_type == "TXT":
+            m = _HTB_FLAG.search(r.value)
+            if m:
+                return m.group(0)
+    return None
+
+
+def _find_dc1_ip(domain: str, records: list[DnsRecord]) -> Optional[str]:
+    candidates = [f"dc1.{domain}", f"dc1.internal.{domain}", "dc1"]
+    for fqdn in candidates:
+        for r in records:
+            if r.record_type == "A" and r.fqdn == fqdn:
+                return r.value
+    for r in records:
+        if r.record_type == "A" and r.fqdn.startswith("dc1."):
+            return r.value
+    return None
+
+
+def _find_octet_203_host(records: list[DnsRecord]) -> Optional[str]:
+    for r in records:
+        if r.record_type != "A":
+            continue
+        parts = r.value.split(".")
+        if len(parts) == 4 and parts[-1] == "203":
+            return r.fqdn
+    return None
+
+
+def _find_dns_fqdn(target_ip: str, records: list[DnsRecord], ns_list: list[str]) -> Optional[str]:
+    for r in records:
+        if r.record_type == "A" and r.value == target_ip and r.fqdn in ns_list:
+            return r.fqdn
+    return ns_list[0] if ns_list else None
+
+
+def _make_resolver(server: str, timeout: float) -> dns.resolver.Resolver:
     r = dns.resolver.Resolver(configure=False)
     r.nameservers = [server]
     r.timeout = timeout
@@ -19,186 +71,129 @@ def make_resolver(server: str, timeout: float) -> dns.resolver.Resolver:
     return r
 
 
-def query_text(resolver: dns.resolver.Resolver, name: str, rrtype: str) -> List[str]:
-    try:
-        ans = resolver.resolve(name, rrtype)
-    except Exception:
-        return []
-    return [r.to_text().strip().strip('"') for r in ans]
-
-
-def safe_axfr(server: str, zone_name: str, timeout: float) -> Optional[dns.zone.Zone]:
-    try:
-        xfr = dns.query.xfr(server, zone_name, lifetime=timeout)
-        zone = dns.zone.from_xfr(xfr)
-        return zone
-    except Exception:
-        return None
-
-
-def zone_records(zone: dns.zone.Zone, zone_name: str) -> List[Tuple[str, str, str]]:
-    records: List[Tuple[str, str, str]] = []
-    for name, node in zone.nodes.items():
-        owner = str(name)
-        fqdn = zone_name if owner == "@" else f"{owner}.{zone_name}"
-        for rdataset in node.rdatasets:
-            rrtype = dns.rdatatype.to_text(rdataset.rdtype)
-            for rr in rdataset:
-                records.append((fqdn.lower(), rrtype, rr.to_text().strip().strip('"')))
-    return records
-
-
-def find_dns_fqdn(target_ip: str, domain: str, resolver: dns.resolver.Resolver) -> Optional[str]:
-    ns_records = query_text(resolver, domain, "NS")
-    if not ns_records:
-        return None
-
-    # Prefer NS whose A points to target IP, else fall back to first NS.
-    for ns in ns_records:
-        ns_fqdn = ns.rstrip(".").lower()
-        a_records = query_text(resolver, ns_fqdn, "A")
-        if target_ip in a_records:
-            return ns_fqdn
-    return ns_records[0].rstrip(".").lower()
-
-
-def discover_candidate_zones(base_domain: str, base_records: List[Tuple[str, str, str]]) -> Set[str]:
-    zones = {base_domain.lower()}
-
-    for fqdn, rrtype, value in base_records:
-        if rrtype != "A":
-            continue
-        if fqdn == base_domain.lower():
-            continue
-        # Any delegated-looking subdomain is worth trying as a zone.
-        zones.add(fqdn)
-
-    return zones
-
-
-def find_flag_txt(all_records: Dict[str, List[Tuple[str, str, str]]]) -> Optional[str]:
-    pattern = re.compile(r"HTB\{[^}]+\}")
-    for recs in all_records.values():
-        for _, rrtype, value in recs:
-            if rrtype == "TXT":
-                m = pattern.search(value)
-                if m:
-                    return m.group(0)
-    return None
-
-
-def find_dc1_ip(domain: str, resolver: dns.resolver.Resolver, all_records: Dict[str, List[Tuple[str, str, str]]]) -> Optional[str]:
-    # Direct queries first.
-    candidates = [
-        f"dc1.{domain}",
-        f"dc1.internal.{domain}",
-        "dc1",
-    ]
-    for name in candidates:
-        ips = query_text(resolver, name, "A")
-        if ips:
-            return ips[0]
-
-    # Fallback to zone records.
-    for recs in all_records.values():
-        for fqdn, rrtype, value in recs:
-            if rrtype == "A" and fqdn.startswith("dc1."):
-                return value
-    return None
-
-
-def find_octet_203_from_records(all_records: Dict[str, List[Tuple[str, str, str]]]) -> Optional[str]:
-    for recs in all_records.values():
-        for fqdn, rrtype, value in recs:
-            if rrtype != "A":
-                continue
-            parts = value.split(".")
-            if len(parts) == 4 and parts[-1] == "203":
-                return fqdn
-    return None
-
-
-def brute_find_octet_203(
-    resolver: dns.resolver.Resolver,
-    zones: Iterable[str],
+def _brute_find_octet_203(
+    server: str,
+    zones: list[str],
     wordlist_path: Path,
     limit: int,
+    timeout: float,
 ) -> Optional[str]:
+    """Brute-force sub-domains looking for a host whose IP ends in .203.
+
+    Wildcard DNS zones return a fixed IP for unknown names; that IP typically
+    won't end in .203, so specifically checking the last octet still works
+    in a wildcard environment.
+    """
     if not wordlist_path.exists():
         return None
 
-    words: List[str] = []
+    words: list[str] = []
     for line in wordlist_path.read_text(errors="ignore").splitlines():
         w = line.strip()
-        if not w or w.startswith("#"):
-            continue
-        words.append(w)
-        if len(words) >= limit:
-            break
+        if w and not w.startswith("#"):
+            words.append(w)
+            if len(words) >= limit:
+                break
 
+    resolver = _make_resolver(server, timeout)
     for zone in zones:
-        for w in words:
-            fqdn = f"{w}.{zone}".lower()
-            ips = query_text(resolver, fqdn, "A")
-            for ip in ips:
-                parts = ip.split(".")
-                if len(parts) == 4 and parts[-1] == "203":
-                    return fqdn
+        for word in words:
+            fqdn = f"{word}.{zone}".lower()
+            try:
+                ans = resolver.resolve(fqdn, "A")
+                for rdata in ans:
+                    ip = rdata.to_text().strip()
+                    if ip.split(".")[-1] == "203":
+                        return fqdn
+            except Exception:
+                continue
     return None
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Solve HTB DNS host-based enumeration lab")
-    parser.add_argument("target", help="Target DNS server IP")
+    parser = argparse.ArgumentParser(
+        description="Solve HTB Footprinting DNS lab",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    parser.add_argument("target", help="Target DNS server IP (rotates on lab reset)")
     parser.add_argument("--domain", default="inlanefreight.htb", help="Base domain")
-    parser.add_argument("--timeout", type=float, default=3.0, help="DNS timeout seconds")
+    parser.add_argument("--timeout", type=int, default=5, help="DNS query timeout (seconds)")
     parser.add_argument(
         "--wordlist",
         default="/usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt",
-        help="Wordlist used for optional brute-force",
+        help="Wordlist for subdomain brute-force",
     )
-    parser.add_argument("--bruteforce-limit", type=int, default=5000, help="Max words for brute-force")
-    parser.add_argument("--no-bruteforce", action="store_true", help="Disable brute-force fallback")
+    parser.add_argument("--bruteforce-limit", type=int, default=5000, help="Max brute-force words")
+    parser.add_argument("--no-bruteforce", action="store_true", help="Skip subdomain brute-force")
+    parser.add_argument(
+        "--output",
+        default="dns_recon_output",
+        help="Output directory for full recon artifacts",
+    )
+    parser.add_argument("--verbose", action="store_true", help="Verbose logging")
     args = parser.parse_args()
 
-    domain = args.domain.lower().rstrip(".")
-    resolver = make_resolver(args.target, args.timeout)
+    wordlist = None if args.no_bruteforce else args.wordlist
 
-    dns_fqdn = find_dns_fqdn(args.target, domain, resolver)
+    config = DnsReconConfig(
+        domain=args.domain,
+        dns_server=args.target,
+        wordlist=wordlist,
+        mode="full",
+        output_root=args.output,
+        timeout=args.timeout,
+        bruteforce_limit=args.bruteforce_limit,
+        skip_subdomain_brute=args.no_bruteforce,
+        verbose=args.verbose,
+    )
 
-    all_records: Dict[str, List[Tuple[str, str, str]]] = {}
-    base_zone = safe_axfr(args.target, domain, args.timeout)
-    if base_zone is not None:
-        all_records[domain] = zone_records(base_zone, domain)
-    else:
-        all_records[domain] = []
+    orchestrator = DnsOrchestrator(config)
+    result = orchestrator.run()
 
-    candidate_zones = discover_candidate_zones(domain, all_records[domain])
+    all_records = result.all_records_flat()
+    ns_list = result.name_servers()
 
-    # Attempt AXFR on candidate sub-zones as well.
-    for z in sorted(candidate_zones):
-        if z == domain:
-            continue
-        zf = safe_axfr(args.target, z, args.timeout)
-        if zf is not None:
-            all_records[z] = zone_records(zf, z)
+    dns_fqdn = _find_dns_fqdn(args.target, all_records, ns_list)
+    flag = _find_flag(all_records)
+    dc1_ip = _find_dc1_ip(args.domain.lower().rstrip("."), all_records)
+    host_203 = _find_octet_203_host(all_records)
 
-    flag = find_flag_txt(all_records)
-    dc1_ip = find_dc1_ip(domain, resolver, all_records)
-    host_203 = find_octet_203_from_records(all_records)
-
-    if host_203 is None and not args.no_bruteforce:
-        host_203 = brute_find_octet_203(
-            resolver,
-            sorted(candidate_zones),
-            Path(args.wordlist),
-            args.bruteforce_limit,
+    # Brute-force fallback: wildcard zones mask resolution results, but a host
+    # with a real .203 IP will still return .203 (the wildcard IP won't).
+    if host_203 is None and wordlist and not args.no_bruteforce:
+        brute_zones = [args.domain.lower().rstrip(".")]
+        # Also search sub-zones discovered via zone transfer
+        brute_zones += sorted({
+            r.fqdn for r in all_records
+            if r.record_type == "A"
+            and r.fqdn != args.domain.lower().rstrip(".")
+            and r.fqdn.endswith("." + args.domain.lower().rstrip("."))
+            and not r.value.startswith("127.")
+        })
+        print(f"\n[*] Brute-forcing .203 host across {len(brute_zones)} zone(s)...")
+        host_203 = _brute_find_octet_203(
+            server=args.target,
+            zones=brute_zones,
+            wordlist_path=Path(args.wordlist),
+            limit=args.bruteforce_limit,
+            timeout=float(args.timeout),
         )
 
-    print(f"Target DNS FQDN: {dns_fqdn or 'NOT_FOUND'}")
-    print(f"Zone Transfer TXT Flag: {flag or 'NOT_FOUND'}")
-    print(f"DC1 IPv4: {dc1_ip or 'NOT_FOUND'}")
-    print(f"Host FQDN with .203 IP: {host_203 or 'NOT_FOUND'}")
+    print()
+    print("=" * 50)
+    print("HTB DNS Lab Answers")
+    print("=" * 50)
+    print(f"Target DNS FQDN:          {dns_fqdn or 'NOT_FOUND'}")
+    print(f"Zone Transfer TXT Flag:   {flag or 'NOT_FOUND'}")
+    print(f"DC1 IPv4:                 {dc1_ip or 'NOT_FOUND'}")
+    print(f"Host FQDN with .203 IP:   {host_203 or 'NOT_FOUND'}")
+    print("=" * 50)
+    print(f"Full recon output:        {args.output}/")
+
+    missing = sum(1 for v in [dns_fqdn, flag, dc1_ip, host_203] if v is None)
+    if missing:
+        print(f"\n[!] {missing} answer(s) not found. Check {args.output}/summary/findings.md")
+        return 1
 
     return 0
 

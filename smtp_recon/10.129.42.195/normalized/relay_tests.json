@@ -1,0 +1,46 @@
+[
+  {
+    "port": 25,
+    "mail_from": "attacker@external-pentest.invalid",
+    "rcpt_to": "victim@external-pentest.invalid",
+    "scenario": "external->external",
+    "mail_from_code": 250,
+    "rcpt_to_code": 250,
+    "accepted": true,
+    "safe_mode": true,
+    "notes": ""
+  },
+  {
+    "port": 25,
+    "mail_from": "internal@10.129.42.195",
+    "rcpt_to": "victim@external-pentest.invalid",
+    "scenario": "internal->external",
+    "mail_from_code": 501,
+    "rcpt_to_code": 0,
+    "accepted": false,
+    "safe_mode": true,
+    "notes": ""
+  },
+  {
+    "port": 25,
+    "mail_from": "attacker@external-pentest.invalid",
+    "rcpt_to": "internal@10.129.42.195",
+    "scenario": "external->internal",
+    "mail_from_code": 250,
+    "rcpt_to_code": 501,
+    "accepted": false,
+    "safe_mode": true,
+    "notes": ""
+  },
+  {
+    "port": 25,
+    "mail_from": "internal@10.129.42.195",
+    "rcpt_to": "internal@10.129.42.195",
+    "scenario": "internal->internal",
+    "mail_from_code": 501,
+    "rcpt_to_code": 0,
+    "accepted": false,
+    "safe_mode": true,
+    "notes": ""
+  }
+]

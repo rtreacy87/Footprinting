@@ -1,0 +1,16 @@
+{
+  "target": "10.129.42.195",
+  "domain": "",
+  "ports": [
+    25,
+    465,
+    587,
+    2525
+  ],
+  "safe_mode": true,
+  "skip_relay": false,
+  "skip_spoofing": false,
+  "skip_user_enum": false,
+  "timeout": 30,
+  "started_at": "2026-05-05T01:30:54.664108+00:00"
+}

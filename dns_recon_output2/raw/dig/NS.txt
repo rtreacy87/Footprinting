@@ -1,0 +1,2 @@
+inlanefreight.htb.	604800	IN	NS	ns.inlanefreight.htb.
+ns.inlanefreight.htb.	604800	IN	A	127.0.0.1

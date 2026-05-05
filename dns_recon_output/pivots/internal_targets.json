@@ -1,0 +1,10 @@
+[
+  {
+    "hostname": "internal.inlanefreight.htb",
+    "pivot_type": "internal",
+    "source": "A record (internal label)",
+    "recommended_module": "smb_enum or nmap",
+    "ip": "10.129.1.6",
+    "notes": ""
+  }
+]

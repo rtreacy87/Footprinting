@@ -1,0 +1,207 @@
+# VRFY enumeration against 10.129.42.195:25
+C: VRFY michael
+S: 550 5.1.1 <michael>: Recipient address rejected: User unknown in local recipient table
+C: VRFY james
+S: 550 5.1.1 <james>: Recipient address rejected: User unknown in local recipient table
+C: VRFY john
+S: 550 5.1.1 <john>: Recipient address rejected: User unknown in local recipient table
+C: VRFY robert
+S: 550 5.1.1 <robert>: Recipient address rejected: User unknown in local recipient table
+C: VRFY david
+S: 550 5.1.1 <david>: Recipient address rejected: User unknown in local recipient table
+C: VRFY william
+S: 550 5.1.1 <william>: Recipient address rejected: User unknown in local recipient table
+C: VRFY mary
+S: 550 5.1.1 <mary>: Recipient address rejected: User unknown in local recipient table
+C: VRFY christopher
+S: 550 5.1.1 <christopher>: Recipient address rejected: User unknown in local recipient table
+C: VRFY joseph
+S: 550 5.1.1 <joseph>: Recipient address rejected: User unknown in local recipient table
+C: VRFY richard
+S: 550 5.1.1 <richard>: Recipient address rejected: User unknown in local recipient table
+C: VRFY daniel
+S: 550 5.1.1 <daniel>: Recipient address rejected: User unknown in local recipient table
+C: VRFY thomas
+S: 550 5.1.1 <thomas>: Recipient address rejected: User unknown in local recipient table
+C: VRFY matthew
+S: 550 5.1.1 <matthew>: Recipient address rejected: User unknown in local recipient table
+C: VRFY jennifer
+S: 550 5.1.1 <jennifer>: Recipient address rejected: User unknown in local recipient table
+C: VRFY charles
+S: 550 5.1.1 <charles>: Recipient address rejected: User unknown in local recipient table
+C: VRFY anthony
+S: 550 5.1.1 <anthony>: Recipient address rejected: User unknown in local recipient table
+C: VRFY patricia
+S: 550 5.1.1 <patricia>: Recipient address rejected: User unknown in local recipient table
+C: VRFY linda
+S: 550 5.1.1 <linda>: Recipient address rejected: User unknown in local recipient table
+C: VRFY mark
+S: 550 5.1.1 <mark>: Recipient address rejected: User unknown in local recipient table
+C: VRFY elizabeth
+S: 550 5.1.1 <elizabeth>: Recipient address rejected: User unknown in local recipient table
+C: VRFY joshua
+S: 550 5.1.1 <joshua>: Recipient address rejected: User unknown in local recipient table
+C: VRFY steven
+S: 550 5.1.1 <steven>: Recipient address rejected: User unknown in local recipient table
+C: VRFY andrew
+S: 550 5.1.1 <andrew>: Recipient address rejected: User unknown in local recipient table
+C: VRFY kevin
+S: 550 5.1.1 <kevin>: Recipient address rejected: User unknown in local recipient table
+C: VRFY brian
+S: 550 5.1.1 <brian>: Recipient address rejected: User unknown in local recipient table
+C: VRFY barbara
+S: 550 5.1.1 <barbara>: Recipient address rejected: User unknown in local recipient table
+C: VRFY jessica
+S: 550 5.1.1 <jessica>: Recipient address rejected: User unknown in local recipient table
+C: VRFY jason
+S: 550 5.1.1 <jason>: Recipient address rejected: User unknown in local recipient table
+C: VRFY susan
+S: 550 5.1.1 <susan>: Recipient address rejected: User unknown in local recipient table
+C: VRFY timothy
+S: 550 5.1.1 <timothy>: Recipient address rejected: User unknown in local recipient table
+C: VRFY paul
+S: 550 5.1.1 <paul>: Recipient address rejected: User unknown in local recipient table
+C: VRFY kenneth
+S: 550 5.1.1 <kenneth>: Recipient address rejected: User unknown in local recipient table
+C: VRFY lisa
+S: 550 5.1.1 <lisa>: Recipient address rejected: User unknown in local recipient table
+C: VRFY ryan
+S: 550 5.1.1 <ryan>: Recipient address rejected: User unknown in local recipient table
+C: VRFY sarah
+S: 550 5.1.1 <sarah>: Recipient address rejected: User unknown in local recipient table
+C: VRFY karen
+S: 550 5.1.1 <karen>: Recipient address rejected: User unknown in local recipient table
+C: VRFY jeffrey
+S: 550 5.1.1 <jeffrey>: Recipient address rejected: User unknown in local recipient table
+C: VRFY donald
+S: 550 5.1.1 <donald>: Recipient address rejected: User unknown in local recipient table
+C: VRFY ashley
+S: 550 5.1.1 <ashley>: Recipient address rejected: User unknown in local recipient table
+C: VRFY eric
+S: 550 5.1.1 <eric>: Recipient address rejected: User unknown in local recipient table
+C: VRFY jacob
+S: 550 5.1.1 <jacob>: Recipient address rejected: User unknown in local recipient table
+C: VRFY nicholas
+S: 550 5.1.1 <nicholas>: Recipient address rejected: User unknown in local recipient table
+C: VRFY jonathan
+S: 550 5.1.1 <jonathan>: Recipient address rejected: User unknown in local recipient table
+C: VRFY ronald
+S: 550 5.1.1 <ronald>: Recipient address rejected: User unknown in local recipient table
+C: VRFY michelle
+S: 550 5.1.1 <michelle>: Recipient address rejected: User unknown in local recipient table
+C: VRFY kimberly
+S: 550 5.1.1 <kimberly>: Recipient address rejected: User unknown in local recipient table
+C: VRFY nancy
+S: 550 5.1.1 <nancy>: Recipient address rejected: User unknown in local recipient table
+C: VRFY justin
+S: 550 5.1.1 <justin>: Recipient address rejected: User unknown in local recipient table
+C: VRFY sandra
+S: 550 5.1.1 <sandra>: Recipient address rejected: User unknown in local recipient table
+C: VRFY amanda
+S: 550 5.1.1 <amanda>: Recipient address rejected: User unknown in local recipient table
+C: VRFY brandon
+S: 550 5.1.1 <brandon>: Recipient address rejected: User unknown in local recipient table
+C: VRFY stephanie
+S: 550 5.1.1 <stephanie>: Recipient address rejected: User unknown in local recipient table
+C: VRFY emily
+S: 550 5.1.1 <emily>: Recipient address rejected: User unknown in local recipient table
+C: VRFY melissa
+S: 550 5.1.1 <melissa>: Recipient address rejected: User unknown in local recipient table
+C: VRFY gary
+S: 550 5.1.1 <gary>: Recipient address rejected: User unknown in local recipient table
+C: VRFY edward
+S: 550 5.1.1 <edward>: Recipient address rejected: User unknown in local recipient table
+C: VRFY stephen
+S: 550 5.1.1 <stephen>: Recipient address rejected: User unknown in local recipient table
+C: VRFY scott
+S: 550 5.1.1 <scott>: Recipient address rejected: User unknown in local recipient table
+C: VRFY george
+S: 550 5.1.1 <george>: Recipient address rejected: User unknown in local recipient table
+C: VRFY donna
+S: 550 5.1.1 <donna>: Recipient address rejected: User unknown in local recipient table
+C: VRFY jose
+S: 550 5.1.1 <jose>: Recipient address rejected: User unknown in local recipient table
+C: VRFY rebecca
+S: 550 5.1.1 <rebecca>: Recipient address rejected: User unknown in local recipient table
+C: VRFY deborah
+S: 550 5.1.1 <deborah>: Recipient address rejected: User unknown in local recipient table
+C: VRFY laura
+S: 550 5.1.1 <laura>: Recipient address rejected: User unknown in local recipient table
+C: VRFY cynthia
+S: 550 5.1.1 <cynthia>: Recipient address rejected: User unknown in local recipient table
+C: VRFY carol
+S: 550 5.1.1 <carol>: Recipient address rejected: User unknown in local recipient table
+C: VRFY amy
+S: 550 5.1.1 <amy>: Recipient address rejected: User unknown in local recipient table
+C: VRFY margaret
+S: 550 5.1.1 <margaret>: Recipient address rejected: User unknown in local recipient table
+C: VRFY gregory
+S: 550 5.1.1 <gregory>: Recipient address rejected: User unknown in local recipient table
+C: VRFY sharon
+S: 550 5.1.1 <sharon>: Recipient address rejected: User unknown in local recipient table
+C: VRFY larry
+S: 550 5.1.1 <larry>: Recipient address rejected: User unknown in local recipient table
+C: VRFY angela
+S: 550 5.1.1 <angela>: Recipient address rejected: User unknown in local recipient table
+C: VRFY maria
+S: 550 5.1.1 <maria>: Recipient address rejected: User unknown in local recipient table
+C: VRFY alexander
+S: 550 5.1.1 <alexander>: Recipient address rejected: User unknown in local recipient table
+C: VRFY benjamin
+S: 550 5.1.1 <benjamin>: Recipient address rejected: User unknown in local recipient table
+C: VRFY nicole
+S: 550 5.1.1 <nicole>: Recipient address rejected: User unknown in local recipient table
+C: VRFY kathleen
+S: 550 5.1.1 <kathleen>: Recipient address rejected: User unknown in local recipient table
+C: VRFY patrick
+S: 550 5.1.1 <patrick>: Recipient address rejected: User unknown in local recipient table
+C: VRFY samantha
+S: 550 5.1.1 <samantha>: Recipient address rejected: User unknown in local recipient table
+C: VRFY tyler
+S: 550 5.1.1 <tyler>: Recipient address rejected: User unknown in local recipient table
+C: VRFY samuel
+S: 550 5.1.1 <samuel>: Recipient address rejected: User unknown in local recipient table
+C: VRFY betty
+S: 550 5.1.1 <betty>: Recipient address rejected: User unknown in local recipient table
+C: VRFY brenda
+S: 550 5.1.1 <brenda>: Recipient address rejected: User unknown in local recipient table
+C: VRFY pamela
+S: 550 5.1.1 <pamela>: Recipient address rejected: User unknown in local recipient table
+C: VRFY aaron
+S: 550 5.1.1 <aaron>: Recipient address rejected: User unknown in local recipient table
+C: VRFY kelly
+S: 550 5.1.1 <kelly>: Recipient address rejected: User unknown in local recipient table
+C: VRFY robin
+S: 252 2.0.0 robin
+C: VRFY heather
+S: 550 5.1.1 <heather>: Recipient address rejected: User unknown in local recipient table
+C: VRFY rachel
+S: 550 5.1.1 <rachel>: Recipient address rejected: User unknown in local recipient table
+C: VRFY adam
+S: 550 5.1.1 <adam>: Recipient address rejected: User unknown in local recipient table
+C: VRFY christine
+S: 550 5.1.1 <christine>: Recipient address rejected: User unknown in local recipient table
+C: VRFY zachary
+S: 550 5.1.1 <zachary>: Recipient address rejected: User unknown in local recipient table
+C: VRFY debra
+S: 550 5.1.1 <debra>: Recipient address rejected: User unknown in local recipient table
+C: VRFY katherine
+S: 550 5.1.1 <katherine>: Recipient address rejected: User unknown in local recipient table
+C: VRFY dennis
+S: 550 5.1.1 <dennis>: Recipient address rejected: User unknown in local recipient table
+C: VRFY nathan
+S: 550 5.1.1 <nathan>: Recipient address rejected: User unknown in local recipient table
+C: VRFY christina
+S: 550 5.1.1 <christina>: Recipient address rejected: User unknown in local recipient table
+C: VRFY julie
+S: 550 5.1.1 <julie>: Recipient address rejected: User unknown in local recipient table
+C: VRFY jordan
+S: 550 5.1.1 <jordan>: Recipient address rejected: User unknown in local recipient table
+C: VRFY kyle
+S: 550 5.1.1 <kyle>: Recipient address rejected: User unknown in local recipient table
+C: VRFY anna
+S: 550 5.1.1 <anna>: Recipient address rejected: User unknown in local recipient table
+C: VRFY notarealuser-canary
+S: 550 5.1.1 <notarealuser-canary>: Recipient address rejected: User unknown in local recipient table
+C: VRFY zzz-smtp-recon-canary
+S: 550 5.1.1 <zzz-smtp-recon-canary>: Recipient address rejected: User unknown in local recipient table

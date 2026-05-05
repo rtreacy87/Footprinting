@@ -1,0 +1,10 @@
+[
+  {
+    "hostname": "dev.inlanefreight.htb",
+    "pivot_type": "web",
+    "source": "A record (dev label)",
+    "recommended_module": "web_recon",
+    "ip": "10.12.0.1",
+    "notes": ""
+  }
+]
